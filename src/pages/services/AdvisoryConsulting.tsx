@@ -123,7 +123,7 @@ const AdvisoryConsulting = () => {
       </PageSection>
 
       {/* Why Choose Us */}
-      <PageSection title="Why Choose Our Advisory Services" subtitle="The Bean Info System advantage in consulting">
+      <PageSection title="Why Choose Our Advisory Services" subtitle="The Bean InfoSystems advantage in consulting">
         <div className="grid md:grid-cols-3 gap-6">
           {advantages.map((advantage, index) => (
             <Card key={index} className="p-6">

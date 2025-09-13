@@ -22,7 +22,7 @@ const CtaSection = ({ invertColors = false }: CtaSectionProps) => {
         </ScrollAnimator>
         <ScrollAnimator animation="fade-in" delay={200}>
           <p className={`text-lg ${invertColors ? "text-black/70" : "text-foreground/70"} mb-8`}>
-            Let's discuss how BeanInfo System can help your business thrive in the digital landscape.
+            Let's discuss how Bean InfoSystems can help your business thrive in the digital landscape.
           </p>
         </ScrollAnimator>
         <ScrollAnimator animation="fade-in" delay={400}>

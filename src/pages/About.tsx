@@ -25,7 +25,7 @@ const About = () => {
     {
       year: "2010",
       title: "Founding",
-      description: "Bean Info System was founded with a vision to provide innovative software solutions to businesses across industries.",
+      description: "Bean InfoSystems was founded with a vision to provide innovative software solutions to businesses across industries.",
       icon: <Building size={24} />
     },
     {
@@ -81,7 +81,7 @@ const About = () => {
   return (
     <>
       <PageHero 
-        title="About Bean Info System" 
+        title="About Bean InfoSystems" 
         subtitle="Driving digital transformation through innovation and expertise"
       />
 
@@ -91,7 +91,7 @@ const About = () => {
           <div>
             <h2 className="text-3xl font-bold mb-4">Our Story</h2>
             <p className="text-foreground/70 mb-4">
-              Founded in 2010, Bean Info System has grown from a small development team to a comprehensive 
+              Founded in 2010, Bean InfoSystems has grown from a small development team to a comprehensive 
               technology partner serving clients across the globe. Our journey is marked by a relentless 
               pursuit of innovation and excellence in everything we do.
             </p>
@@ -114,7 +114,7 @@ const About = () => {
                   <div className="absolute top-0 left-0 w-full h-full bg-card rounded-lg transform -rotate-3 shadow-lg"></div>
                   <div className="relative w-full h-full bg-card rounded-lg shadow-lg p-6 flex flex-col justify-center">
                     <div className="text-bean mb-4">
-                      <Users size={40} />
+                      <Users size={40} color='black'/>
                     </div>
                     <h3 className="text-2xl font-bold mb-2">Our Mission</h3>
                     <p className="text-foreground/70">
@@ -135,7 +135,7 @@ const About = () => {
         <div className="grid md:grid-cols-3 gap-8">
           <Card className="p-6">
             <div className="text-bean mb-4">
-              <Lightbulb size={36} />
+              <Lightbulb size={36} color='black' />
             </div>
             <h3 className="text-xl font-bold mb-3">Our Mission</h3>
             <p className="text-foreground/70">
@@ -145,7 +145,7 @@ const About = () => {
           </Card>
           <Card className="p-6">
             <div className="text-bean mb-4">
-              <Target size={36} />
+              <Target size={36} color='black' />
             </div>
             <h3 className="text-xl font-bold mb-3">Our Vision</h3>
             <p className="text-foreground/70">
@@ -155,7 +155,7 @@ const About = () => {
           </Card>
           <Card className="p-6">
             <div className="text-bean mb-4">
-              <Heart size={36} />
+              <Heart size={36} color='black' />
             </div>
             <h3 className="text-xl font-bold mb-3">Our Values</h3>
             <ul className="text-foreground/70 space-y-2">
@@ -204,7 +204,7 @@ const About = () => {
       </PageSection>
 
       {/* Company Timeline */}
-      <PageSection title="Our Journey" subtitle="A timeline of Bean Info System's growth and evolution">
+      <PageSection title="Our Journey" subtitle="A timeline of Bean InfoSystems's growth and evolution">
         <div className="relative">
           {/* Timeline center line */}
           <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-border"></div>
@@ -240,7 +240,7 @@ const About = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           <Card className="p-6">
             <div className="text-bean mb-4">
-              <Edit size={32} />
+              <Edit size={32} color='black'/>
             </div>
             <h3 className="text-lg font-bold mb-2">Discovery</h3>
             <p className="text-foreground/70">
@@ -249,7 +249,7 @@ const About = () => {
           </Card>
           <Card className="p-6">
             <div className="text-bean mb-4">
-              <Map size={32} />
+              <Map size={32} color='black'/>
             </div>
             <h3 className="text-lg font-bold mb-2">Strategy</h3>
             <p className="text-foreground/70">
@@ -258,7 +258,7 @@ const About = () => {
           </Card>
           <Card className="p-6">
             <div className="text-bean mb-4">
-              <Wrench size={32} />
+              <Wrench size={32} color='black' />
             </div>
             <h3 className="text-lg font-bold mb-2">Implementation</h3>
             <p className="text-foreground/70">
@@ -267,7 +267,7 @@ const About = () => {
           </Card>
           <Card className="p-6">
             <div className="text-bean mb-4">
-              <Share2 size={32} />
+              <Share2 size={32} color='black'/>
             </div>
             <h3 className="text-lg font-bold mb-2">Optimization</h3>
             <p className="text-foreground/70">

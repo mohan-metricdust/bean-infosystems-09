@@ -41,11 +41,6 @@ const ImpactCard: React.FC<ImpactCardProps> = ({
     <Card className="bg-gray-50 border border-gray-200 shadow-lg h-full">
       <CardHeader>
         <div className="flex flex-col items-center mb-2">
-          {icon && (
-            <div className="text-[#3F321F] mb-3">
-              {icon}
-            </div>
-          )}
           <div className="text-lg font-semibold text-[#3F321F] text-center">{businessType}</div>
         </div>
         {cardImage && (
@@ -70,7 +65,6 @@ const ImpactCard: React.FC<ImpactCardProps> = ({
         </div>
         
         <div className="flex items-start gap-2">
-          <CheckCircle className="text-[#3F321F] shrink-0 mt-1" size={18} />
           <div>
             <h4 className="font-semibold mb-1 text-gray-900">Impact:</h4>
             <p className="text-gray-700">{impact}</p>
@@ -176,10 +170,10 @@ const ImpactCarousel = () => {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <div className="flex justify-center mt-6 gap-2">
+        {/* <div className="flex justify-center mt-6 gap-2">
           <CarouselPrevious className="static transform-none mx-1 hover:scale-110 transition-transform duration-300" />
           <CarouselNext className="static transform-none mx-1 hover:scale-110 transition-transform duration-300" />
-        </div>
+        </div> */}
       </Carousel>
     </div>
   );

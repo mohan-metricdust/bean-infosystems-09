@@ -18,8 +18,8 @@ const HeroContent: React.FC<HeroContentProps> = ({ isLoaded }) => {
     <div className="relative z-30">
       <div className="text-right">
         <ScrollAnimator animation="fade-in" threshold={0.1} delay={500}>
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight text-shadow">
-            <span className="text-white">Let's unlock possibilities — </span>
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight text-shadow" style={{fontSize:'3.5rem'}}>
+            <span className="text-white">Let's unlock possibilities </span>
             <br />
             <span className="text-[#3F321F]">Where Innovation Meets Intelligence,</span>
             <br />

@@ -19,7 +19,7 @@ const CareersSection = ({ invertColors = false }: CareersSectionProps) => {
       type: "Full-time",
       department: "Engineering",
       id: "job-1",
-      icon: <User className="text-[#3F321F]" size={20} />
+      icon: <User className="text-black" size={20} />
     },
     {
       title: "UX/UI Designer",
@@ -73,11 +73,11 @@ const CareersSection = ({ invertColors = false }: CareersSectionProps) => {
                 <h3 className="text-lg font-semibold mb-2 text-[#3F321F]">{job.title}</h3>
                 <div className="space-y-2">
                   <div className="flex items-center text-sm text-gray-700">
-                    <Building className="w-4 h-4 mr-2 text-gray-700" />
+                    <Building className="w-4 h-4 mr-2 text-black" />
                     {job.department}
                   </div>
                   <div className="flex items-center text-sm text-gray-700">
-                    <MapPin className="w-4 h-4 mr-2 text-gray-700" />
+                    <MapPin className="w-4 h-4 mr-2 text-black" />
                     {job.location}
                   </div>
                 </div>
@@ -88,7 +88,7 @@ const CareersSection = ({ invertColors = false }: CareersSectionProps) => {
                 className="inline-flex items-center text-sm font-medium text-[#3F321F] opacity-50 group-hover:opacity-100 transition-all duration-300"
               >
                 View Position
-                <ArrowRight size={16} className="ml-1 group-hover:translate-x-1 transition-transform duration-300" />
+                <ArrowRight size={16} color='black' className="ml-1 group-hover:translate-x-1 transition-transform duration-300" />
               </Link>
             </div>
           </Card>

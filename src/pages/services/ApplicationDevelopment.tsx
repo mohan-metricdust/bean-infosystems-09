@@ -93,7 +93,7 @@ const ApplicationDevelopment = () => {
             <h2 className="text-3xl font-bold mb-4">Transform Your Business with Custom Applications</h2>
             <p className="text-foreground/70 mb-4">
               In today's digital-first world, custom applications can be a significant competitive advantage. 
-              At Bean Info System, we specialize in developing tailored software solutions that address your 
+              At Bean InfoSystems, we specialize in developing tailored software solutions that address your 
               unique business challenges and opportunities.
             </p>
             <p className="text-foreground/70 mb-4">
@@ -194,7 +194,7 @@ const ApplicationDevelopment = () => {
       </PageSection>
 
       {/* Benefits Section */}
-      <PageSection dark title="Why Choose Our Application Development Services" subtitle="Experience the Bean Info System advantage">
+      <PageSection dark title="Why Choose Our Application Development Services" subtitle="Experience the Bean InfoSystemss advantage">
         <div className="grid md:grid-cols-3 gap-6">
           <Card className="p-6">
             <div className="text-bean mb-4">

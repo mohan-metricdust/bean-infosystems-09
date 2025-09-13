@@ -102,29 +102,29 @@ const Careers = () => {
     {
       title: "Competitive Compensation",
       description: "Attractive salary packages, performance bonuses, and equity options.",
-      icon: <Award size={32} />
+      icon: <Award size={32} color='black'/>
     },
     {
       title: "Health & Wellness",
       description: "Comprehensive health insurance, wellness programs, and mental health support.",
-      icon: <Heart size={32} />
+      icon: <Heart size={32} color='black'/>
     },
     {
       title: "Growth & Development",
       description: "Continuous learning opportunities, mentorship, and career advancement pathways.",
-      icon: <Zap size={32} />
+      icon: <Zap size={32} color='black'/>
     },
     {
       title: "Work-Life Balance",
       description: "Flexible work arrangements, generous PTO, and respect for personal time.",
-      icon: <Lightbulb size={32} />
+      icon: <Lightbulb size={32} color='black'/>
     }
   ];
 
   return (
     <>
       <PageHero 
-        title="Careers at Bean Info System" 
+        title="Careers at Bean InfoSystems" 
         subtitle="Join our team and help shape the future of technology"
       />
 
@@ -134,7 +134,7 @@ const Careers = () => {
           <div>
             <h2 className="text-3xl font-bold mb-4">Build Your Career With Us</h2>
             <p className="text-foreground/70 mb-4">
-              At Bean Info System, we're more than just a technology company—we're a community of 
+              At Bean InfoSystemss, we're more than just a technology company—we're a community of 
               innovators, problem-solvers, and creative thinkers passionate about making an impact 
               through technology.
             </p>
@@ -153,7 +153,7 @@ const Careers = () => {
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="text-center p-8">
                   <div className="text-bean mb-4">
-                    <Users size={48} />
+                    <Users size={48} color='black'/>
                   </div>
                   <h3 className="text-2xl font-bold mb-2">Our Team</h3>
                   <p className="text-foreground/70 max-w-xs mx-auto">
@@ -167,11 +167,11 @@ const Careers = () => {
       </PageSection>
 
       {/* Culture Section */}
-      <PageSection dark title="Our Culture" subtitle="What makes Bean Info System a great place to work">
+      <PageSection dark title="Our Culture" subtitle="What makes Bean InfoSystemss a great place to work">
         <div className="grid md:grid-cols-3 gap-6">
           <Card className="p-6">
             <div className="text-bean mb-4">
-              <Users size={32} />
+              <Users size={32} color='black'/>
             </div>
             <h3 className="text-xl font-semibold mb-2">Collaborative Environment</h3>
             <p className="text-foreground/70">
@@ -181,7 +181,7 @@ const Careers = () => {
           </Card>
           <Card className="p-6">
             <div className="text-bean mb-4">
-              <Zap size={32} />
+              <Zap size={32} color='black'/>
             </div>
             <h3 className="text-xl font-semibold mb-2">Innovation-Driven</h3>
             <p className="text-foreground/70">
@@ -191,7 +191,7 @@ const Careers = () => {
           </Card>
           <Card className="p-6">
             <div className="text-bean mb-4">
-              <Lightbulb size={32} />
+              <Lightbulb size={32} color='black'/>
             </div>
             <h3 className="text-xl font-semibold mb-2">Continuous Learning</h3>
             <p className="text-foreground/70">
@@ -302,7 +302,7 @@ const Careers = () => {
       </PageSection>
 
       {/* Employee Testimonials */}
-      <PageSection title="Life at Bean Info System" subtitle="Hear from our team members">
+      <PageSection title="Life at Bean InfoSystemss" subtitle="Hear from our team members">
         <div className="grid md:grid-cols-3 gap-6">
           <Card className="p-6">
             <div className="mb-4 flex items-center">
@@ -319,7 +319,7 @@ const Careers = () => {
               </div>
             </div>
             <p className="text-foreground/70 italic">
-              "Working at Bean Info System has been an incredible journey. The collaborative culture, 
+              "Working at Bean InfoSystemss has been an incredible journey. The collaborative culture, 
               challenging projects, and opportunities for growth have made it the perfect place to 
               advance my career."
             </p>
@@ -339,7 +339,7 @@ const Careers = () => {
               </div>
             </div>
             <p className="text-foreground/70 italic">
-              "The supportive environment and focus on continuous learning at Bean Info System have 
+              "The supportive environment and focus on continuous learning at Bean InfoSystemss have 
               allowed me to grow both professionally and personally. I'm proud to be part of a team 
               that truly values innovation and quality."
             </p>
@@ -359,7 +359,7 @@ const Careers = () => {
               </div>
             </div>
             <p className="text-foreground/70 italic">
-              "What sets Bean Info System apart is the genuine care for employees and commitment to 
+              "What sets Bean InfoSystemss apart is the genuine care for employees and commitment to 
               work-life balance. The challenging projects and collaborative team make it a rewarding 
               place to build a career."
             </p>

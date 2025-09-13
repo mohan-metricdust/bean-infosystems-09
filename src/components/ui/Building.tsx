@@ -1,5 +1,4 @@
-
-import React from 'react';
+﻿import React from 'react';
 
 const Building = ({ className = "" }: { className?: string }) => {
   return (
@@ -13,7 +12,7 @@ const Building = ({ className = "" }: { className?: string }) => {
       strokeWidth="2" 
       strokeLinecap="round" 
       strokeLinejoin="round" 
-      className={`text-white ${className}`}
+      className={`text-black ${className}`}
     >
       <rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect>
       <path d="M9 22v-4h6v4"></path>

@@ -123,7 +123,7 @@ const DataAnalytics = () => {
       </PageSection>
 
       {/* Advantages */}
-      <PageSection title="Why Choose Our Data Analytics Services" subtitle="The Bean Info System analytics advantage">
+      <PageSection title="Why Choose Our Data Analytics Services" subtitle="The Bean InfoSystems analytics advantage">
         <div className="grid md:grid-cols-3 gap-6">
           {advantages.map((advantage, index) => (
             <Card key={index} className="p-6">

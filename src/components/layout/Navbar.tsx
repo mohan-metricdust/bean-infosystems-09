@@ -1,4 +1,4 @@
-
+﻿
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, ChevronDown } from 'lucide-react';
@@ -10,7 +10,6 @@ type NavLink = {
 };
 
 const navLinks: NavLink[] = [
-  { name: 'Home', path: '/' },
   { name: 'About', path: '/about' },
   { 
     name: 'Services', 
@@ -23,8 +22,11 @@ const navLinks: NavLink[] = [
       { name: 'Data & Analytics', path: '/services/data-analytics' }
     ]
   },
+  {name: 'Products', path: '/products'},
+  {name:'Trainings', path: '/training'},
+  {name: 'Careers', path: '/careers'},
+  { name: 'Social Impact', path: '/social-impact' },
   { name: 'Contact', path: '/contact' },
-  { name: 'FAQ', path: '/faq' },
 ];
 
 const Navbar = () => {
@@ -78,13 +80,19 @@ const Navbar = () => {
                 {navLinks.map((link) => 
                   link.children ? (
                     <div key={link.name} className="relative group">
-                      <button 
-                        className={`nav-link flex items-center gap-1 uppercase text-sm tracking-wide transition-colors text-black hover:text-[#3F321F]`}
-                        onClick={() => toggleDropdown(link.name)}
-                      >
-                        {link.name}
-                        <ChevronDown size={16} />
-                      </button>
+                      <div className="flex items-center">
+                        <Link 
+                          to={link.path}
+                          className={`uppercase text-base tracking-wide transition-colors ${
+                            location.pathname === link.path 
+                              ? 'text-[#3F321F] font-medium border-b border-[#3F321F]' 
+                              : 'text-black hover:text-[#3F321F]'
+                          }`}
+                        >
+                          {link.name}
+                        </Link>
+                        
+                      </div>
                       <div className="absolute left-0 mt-2 w-56 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top-left z-50">
                         <div className="bg-white border border-gray-200 rounded-md shadow-lg overflow-hidden">
                           {link.children.map((child) => (
@@ -103,7 +111,7 @@ const Navbar = () => {
                     <Link 
                       key={link.name}
                       to={link.path}
-                      className={`uppercase text-sm tracking-wide transition-colors ${
+                      className={`uppercase text-base tracking-wide transition-colors ${
                         location.pathname === link.path 
                           ? 'text-[#3F321F] font-medium border-b border-[#3F321F]' 
                           : 'text-black hover:text-[#3F321F]'
@@ -182,3 +190,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+

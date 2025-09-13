@@ -57,9 +57,9 @@ const Home = () => {
       </div>
       
       {/* Enhanced testimonials banner with light theme */}
-      <div className="bg-gray-100">
+      {/* <div className="bg-gray-100">
         <TestimonialsBanner />
-      </div>
+      </div> */}
       
       {/* Impact carousel section with light theme */}
       <div className="bg-white py-12 overflow-hidden relative">

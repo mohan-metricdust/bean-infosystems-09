@@ -59,7 +59,7 @@ const Contact = () => {
 
   const contactInfo = [
     {
-      icon: <MapPin size={24} />,
+      icon: <MapPin size={24} color='black'/>,
       title: "Our Location",
       details: [
         "123 Tech Drive, Innovation Valley",
@@ -68,7 +68,7 @@ const Contact = () => {
       ]
     },
     {
-      icon: <Phone size={24} />,
+      icon: <Phone size={24} color='black'/>,
       title: "Phone Numbers",
       details: [
         "Main: +1 (555) 123-4567",
@@ -77,16 +77,16 @@ const Contact = () => {
       ]
     },
     {
-      icon: <Mail size={24} />,
+      icon: <Mail size={24} color='black' />,
       title: "Email Addresses",
       details: [
-        "info@beaninfosystem.com",
-        "support@beaninfosystem.com",
-        "careers@beaninfosystem.com"
+        "info@Bean InfoSystemssystem.com",
+        "support@Bean InfoSystemssystem.com",
+        "careers@Bean InfoSystemssystem.com"
       ]
     },
     {
-      icon: <Clock size={24} />,
+      icon: <Clock size={24} color='black'/>,
       title: "Business Hours",
       details: [
         "Monday - Friday: 9:00 AM - 6:00 PM",
@@ -205,7 +205,7 @@ const Contact = () => {
                       Sending...
                     </span>
                   ) : (
-                    <span className="flex items-center justify-center">
+                    <span className="flex items-center justify-center text-white">
                       <Send size={18} className="mr-2" />
                       Send Message
                     </span>
@@ -221,15 +221,15 @@ const Contact = () => {
             <div className="grid grid-cols-1 gap-6">
               {contactInfo.map((info, index) => (
                 <Card key={index} className="p-6">
-                  <div className="flex items-start">
+                  <div className="flex items-center justify-center">
                     <div className="text-bean mr-4 mt-1">
                       {info.icon}
                     </div>
                     <div>
-                      <h3 className="text-lg font-semibold mb-2">{info.title}</h3>
+                      <h3 className="text-lg font-semibold mb-2 text-center">{info.title}</h3>
                       <ul className="space-y-1 text-foreground/70">
                         {info.details.map((detail, i) => (
-                          <li key={i}>{detail}</li>
+                          <li key={i} className='flex justify-center'>{detail}</li>
                         ))}
                       </ul>
                     </div>
@@ -256,42 +256,7 @@ const Contact = () => {
       </PageSection>
 
       {/* FAQ Section */}
-      <PageSection title="Frequently Asked Questions" subtitle="Quick answers to common questions">
-        <div className="grid md:grid-cols-2 gap-6">
-          <Card className="p-6">
-            <h3 className="text-lg font-semibold mb-2">What services do you offer?</h3>
-            <p className="text-foreground/70">
-              We offer a comprehensive range of services including application development, 
-              consulting services, and advisory services. Each service is tailored to meet 
-              your specific business needs and objectives.
-            </p>
-          </Card>
-          <Card className="p-6">
-            <h3 className="text-lg font-semibold mb-2">How can I request a quote?</h3>
-            <p className="text-foreground/70">
-              You can request a quote by filling out our contact form, sending us an email, 
-              or calling our sales team directly. We'll get back to you promptly to discuss 
-              your requirements and provide a detailed quote.
-            </p>
-          </Card>
-          <Card className="p-6">
-            <h3 className="text-lg font-semibold mb-2">Do you work with international clients?</h3>
-            <p className="text-foreground/70">
-              Yes, we work with clients globally. Our team is experienced in managing projects 
-              across different time zones and has established processes to ensure effective 
-              communication and collaboration regardless of location.
-            </p>
-          </Card>
-          <Card className="p-6">
-            <h3 className="text-lg font-semibold mb-2">What is your typical project timeline?</h3>
-            <p className="text-foreground/70">
-              Project timelines vary based on scope and complexity. During our initial 
-              consultation, we'll provide a detailed timeline that outlines key milestones 
-              and deliverables for your specific project.
-            </p>
-          </Card>
-        </div>
-      </PageSection>
+      
     </>
   );
 };

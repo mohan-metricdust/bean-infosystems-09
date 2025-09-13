@@ -36,7 +36,7 @@ const PageHero: React.FC<PageHeroProps> = ({ title, subtitle, imageUrl }) => {
             {title}
           </h1>
           {subtitle && (
-            <p className="text-lg md:text-xl text-foreground/80 max-w-2xl mx-auto animate-fade-in">
+            <p className="text-lg md:text-xl text-white max-w-2xl mx-auto animate-fade-in">
               {subtitle}
             </p>
           )}

@@ -76,7 +76,7 @@ const AdvisoryServices = () => {
               more critical—than ever before.
             </p>
             <p className="text-foreground/70 mb-4">
-              Bean Info System's advisory services provide the insights and expertise you need to 
+              Bean InfoSystems's advisory services provide the insights and expertise you need to 
               navigate this complexity with confidence. Our team of industry experts offers strategic 
               guidance based on deep market knowledge, technological foresight, and business acumen.
             </p>
@@ -242,7 +242,7 @@ const AdvisoryServices = () => {
               </h3>
               <p className="text-foreground/70 mb-4">
                 A leading retail brand was facing challenges adapting to rapidly changing consumer 
-                behaviors and digital commerce trends. They engaged Bean Info System's advisory 
+                behaviors and digital commerce trends. They engaged Bean InfoSystems's advisory 
                 team to help develop a comprehensive digital transformation strategy.
               </p>
               <div className="space-y-4 mb-6">

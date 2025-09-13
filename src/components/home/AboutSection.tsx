@@ -18,7 +18,7 @@ const AboutSection = ({ invertColors = false }: AboutSectionProps) => {
         <ScrollAnimator animation="slide-in-left" className="order-2 md:order-1">
           <h3 className="text-2xl font-semibold mb-4 text-[#3F321F]">Transforming Ideas into Digital Reality</h3>
           <p className={`${textColor} mb-4`} style={{ color: '#333333' }}>
-            At BeanInfo System, we envision a world where technology empowers businesses to achieve their fullest potential. 
+            At Bean InfoSystems, we envision a world where technology empowers businesses to achieve their fullest potential. 
             Our mission is to deliver exceptional digital experiences through innovative software solutions and strategic partnerships.
           </p>
           <p className={`${textColor} mb-6`} style={{ color: '#333333' }}>
@@ -40,7 +40,7 @@ const AboutSection = ({ invertColors = false }: AboutSectionProps) => {
               <div className="absolute inset-0 bg-gradient-to-br from-[#3F321F]/20 to-black/60 z-10 rounded-lg"></div>
               <img 
                 src="/lovable-uploads/6fd8e0e8-c475-451b-9d34-687fd32b515b.png" 
-                alt="BeanInfo System" 
+                alt="Bean InfoSystems" 
                 className="w-full h-full object-cover rounded-lg"
               />
               {/* Removed the brand name overlay */}

@@ -76,7 +76,7 @@ const ConsultingServices = () => {
             <h2 className="text-3xl font-bold mb-4">Drive Business Transformation Through Expert Consulting</h2>
             <p className="text-foreground/70 mb-4">
               In an increasingly complex technological landscape, making the right decisions about 
-              your digital strategy and technology investments is critical. Bean Info System's 
+              your digital strategy and technology investments is critical. Bean InfoSystems's 
               consulting services provide the guidance and expertise you need to navigate these 
               challenges successfully.
             </p>
@@ -152,7 +152,7 @@ const ConsultingServices = () => {
           <div>
             <h2 className="text-3xl font-bold mb-4">Why Partner with Our Consulting Team</h2>
             <p className="text-foreground/70 mb-6">
-              Working with Bean Info System's consulting team offers unique advantages that can 
+              Working with Bean InfoSystems's consulting team offers unique advantages that can 
               significantly impact your business outcomes.
             </p>
             <ul className="space-y-4">

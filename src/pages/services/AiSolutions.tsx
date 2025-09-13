@@ -72,7 +72,7 @@ const AiSolutions = () => {
             <h2 className="text-3xl font-bold mb-4">Intelligent Solutions for Modern Challenges</h2>
             <p className="text-foreground/70 mb-4">
               Artificial Intelligence is no longer a futuristic concept—it's a present-day necessity for businesses 
-              looking to stay competitive. At Bean Info System, we specialize in developing and integrating AI solutions 
+              looking to stay competitive. At Bean InfoSystems, we specialize in developing and integrating AI solutions 
               that drive innovation, efficiency, and growth.
             </p>
             <p className="text-foreground/70 mb-4">
@@ -123,7 +123,7 @@ const AiSolutions = () => {
       </PageSection>
 
       {/* Why Choose Us */}
-      <PageSection title="Why Choose Bean Info System for AI Solutions" subtitle="Experience the difference of working with AI experts">
+      <PageSection title="Why Choose Bean InfoSystemss for AI Solutions" subtitle="Experience the difference of working with AI experts">
         <div className="grid md:grid-cols-3 gap-6">
           {benefits.map((benefit, index) => (
             <Card key={index} className="p-6">

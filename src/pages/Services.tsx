@@ -11,7 +11,7 @@ const Services = () => {
     {
       title: "Application Development",
       description: "Custom software applications designed to meet your unique business requirements and drive digital transformation.",
-      icon: <Code size={40} />,
+      icon: <Code size={40} color='black'/>,
       link: "/services/application-development",
       benefits: [
         "Tailored solutions that perfectly match your needs",
@@ -23,7 +23,7 @@ const Services = () => {
     {
       title: "Consulting Services",
       description: "Strategic guidance from industry experts to optimize your technology investments and improve business processes.",
-      icon: <Users size={40} />,
+      icon: <Users size={40} color='black'/>,
       link: "/services/consulting-services",
       benefits: [
         "Expert analysis of your current technology landscape",
@@ -35,7 +35,7 @@ const Services = () => {
     {
       title: "Advisory Services",
       description: "Insights and recommendations to help you navigate digital trends and make informed business decisions.",
-      icon: <BarChart size={40} />,
+      icon: <BarChart size={40} color='black'/>,
       link: "/services/advisory-services",
       benefits: [
         "Industry trend analysis and insights",
@@ -102,7 +102,7 @@ const Services = () => {
           <div>
             <h2 className="text-3xl font-bold mb-4">Our Service Philosophy</h2>
             <p className="text-foreground/70 mb-4">
-              At Bean Info System, we believe that technology should serve as an enabler for 
+              At Bean InfoSystems, we believe that technology should serve as an enabler for 
               business success. Our services are designed with this philosophy at the core, 
               focusing on delivering solutions that drive tangible business outcomes.
             </p>
@@ -118,30 +118,30 @@ const Services = () => {
             </p>
           </div>
           <div className="grid grid-cols-2 gap-4">
-            <div className="space-y-4">
+            <div className="space-y-4 pt-4">
               <Card className="p-4 flex items-center glass-card">
                 <div className="text-bean mr-3">
-                  <Lightbulb size={24} />
+                  <Lightbulb size={24} color='black'/>
                 </div>
                 <span className="font-medium">Innovative</span>
               </Card>
               <Card className="p-4 flex items-center glass-card translate-y-6">
                 <div className="text-bean mr-3">
-                  <Lightbulb size={24} />
+                  <Lightbulb size={24} color='black'/>
                 </div>
                 <span className="font-medium">Strategic</span>
               </Card>
             </div>
-            <div className="space-y-4 pt-6">
+            <div className="space-y-4 pt-4">
               <Card className="p-4 flex items-center glass-card">
                 <div className="text-bean mr-3">
-                  <Lightbulb size={24} />
+                  <Lightbulb size={24} color='black'/>
                 </div>
                 <span className="font-medium">Collaborative</span>
               </Card>
-              <Card className="p-4 flex items-center glass-card">
+              <Card className="p-4 flex items-center glass-card translate-y-6">
                 <div className="text-bean mr-3">
-                  <Lightbulb size={24} />
+                  <Lightbulb size={24} color='black'/>
                 </div>
                 <span className="font-medium">Results-Driven</span>
               </Card>
@@ -221,7 +221,7 @@ const Services = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
             <Card className="p-6 border-l-4 border-l-bean">
               <div className="text-bean mb-4">
-                <Database size={28} />
+                <Database size={28} color='black'/>
               </div>
               <h3 className="text-xl font-bold mb-2">Data Engineering</h3>
               <p className="text-foreground/70">
@@ -231,7 +231,7 @@ const Services = () => {
             
             <Card className="p-6 border-l-4 border-l-bean">
               <div className="text-bean mb-4">
-                <Activity size={28} />
+                <Activity size={28} color='black'/>
               </div>
               <h3 className="text-xl font-bold mb-2">Machine Learning & AI</h3>
               <p className="text-foreground/70">
@@ -241,7 +241,7 @@ const Services = () => {
             
             <Card className="p-6 border-l-4 border-l-bean">
               <div className="text-bean mb-4">
-                <BarChart2 size={28} />
+                <BarChart2 size={28} color='black'/>
               </div>
               <h3 className="text-xl font-bold mb-2">Data Analytics & Visualization</h3>
               <p className="text-foreground/70">
@@ -276,7 +276,7 @@ const Services = () => {
                   </p>
                   <Link 
                     to={`/case-studies/${index + 10}`} 
-                    className="btn-primary inline-flex self-start"
+                    className="btn-primary inline-flex self-center"
                   >
                     View Case Study
                     <ArrowRight size={18} className="ml-2" />
@@ -312,7 +312,7 @@ const Services = () => {
                   </p>
                   <Link 
                     to={`/case-studies/${index + 1}`} 
-                    className="btn-primary inline-flex self-start"
+                    className="btn-primary inline-flex self-center"
                   >
                     View Case Study
                     <ArrowRight size={18} className="ml-2" />

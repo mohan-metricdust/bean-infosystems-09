@@ -27,28 +27,28 @@ const Clients = () => {
     {
       name: "Sarah Johnson",
       role: "CTO, TechCorp",
-      quote: "Bean Info System transformed our digital infrastructure with their innovative approach and technical expertise. Their team was exceptional from initial planning through implementation.",
+      quote: "Bean InfoSystems transformed our digital infrastructure with their innovative approach and technical expertise. Their team was exceptional from initial planning through implementation.",
       image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200&auto=format&fit=crop",
       rating: 5
     },
     {
       name: "Michael Chen",
       role: "COO, FinanceHub",
-      quote: "Working with Bean Info System has been a game-changer for our organization. Their strategic guidance helped us navigate complex technological decisions and stay ahead of industry trends.",
+      quote: "Working with Bean InfoSystems has been a game-changer for our organization. Their strategic guidance helped us navigate complex technological decisions and stay ahead of industry trends.",
       image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=200&auto=format&fit=crop",
       rating: 5
     },
     {
       name: "Emily Rodriguez",
       role: "VP of Technology, RetailGiant",
-      quote: "The custom application developed by Bean Info System has revolutionized our customer experience and streamlined our operations. Their team's ability to understand our business needs and translate them into technical solutions was impressive.",
+      quote: "The custom application developed by Bean InfoSystems has revolutionized our customer experience and streamlined our operations. Their team's ability to understand our business needs and translate them into technical solutions was impressive.",
       image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=200&auto=format&fit=crop",
       rating: 5
     },
     {
       name: "David Kim",
       role: "Director of Innovation, HealthPlus",
-      quote: "Bean Info System's advisory services provided invaluable insights that shaped our digital transformation strategy. Their team's deep industry knowledge and technical expertise made them the perfect partner for our journey.",
+      quote: "Bean InfoSystems's advisory services provided invaluable insights that shaped our digital transformation strategy. Their team's deep industry knowledge and technical expertise made them the perfect partner for our journey.",
       image: "https://images.unsplash.com/photo-1566492031773-4f4e44671857?q=80&w=200&auto=format&fit=crop",
       rating: 4
     }

@@ -8,7 +8,7 @@ const TestimonialsBanner = () => {
   
   const testimonials = [
     {
-      quote: "BeanInfo System transformed our digital infrastructure with innovative solutions that exceeded our expectations.",
+      quote: "Bean InfoSystems transformed our digital infrastructure with innovative solutions that exceeded our expectations.",
       author: "Sarah Johnson",
       position: "CTO, TechVision Inc."
     },
@@ -18,7 +18,7 @@ const TestimonialsBanner = () => {
       position: "CEO, NexGen Solutions"
     },
     {
-      quote: "Working with BeanInfo has been a game-changer for our business operations and customer experience.",
+      quote: "Working with Bean InfoSystems has been a game-changer for our business operations and customer experience.",
       author: "Jennifer Williams",
       position: "Operations Director, FutureTech"
     }

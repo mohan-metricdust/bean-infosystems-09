@@ -20,11 +20,9 @@ const ServicesSection = ({ invertColors = false }: ServicesSectionProps) => {
       <div className="grid md:grid-cols-3 gap-6">
         <ScrollAnimator animation="slide-in-up" delay={200}>
           <div className="bg-gray-50 border border-gray-200 p-6 rounded-lg h-full flex flex-col">
-            <div className="flex items-center mb-4">
-              <div className="text-[#3F321F] mr-3">
-                <FaBrain size={36} />
-              </div>
-              <h3 className="text-xl font-semibold text-[#3F321F]">AI Solutions & Integration</h3>
+            <div className="flex items-center justify-center mb-4">
+              
+              <h3 className="text-xl text-center font-semibold text-[#3F321F]">AI Solutions & Integration</h3>
             </div>
             <div className="mb-4 flex justify-center">
               <img 
@@ -48,11 +46,9 @@ const ServicesSection = ({ invertColors = false }: ServicesSectionProps) => {
         
         <ScrollAnimator animation="slide-in-up" delay={400}>
           <div className="bg-gray-50 border border-gray-200 p-6 rounded-lg h-full flex flex-col">
-            <div className="flex items-center mb-4">
-              <div className="text-[#3F321F] mr-3">
-                <FaUsers size={36} />
-              </div>
-              <h3 className="text-xl font-semibold text-[#3F321F]">Consulting and Advisory</h3>
+            <div className="flex items-center justify-center mb-4">
+              
+              <h3 className="text-xl text-center font-semibold text-[#3F321F]">Consulting and Advisory</h3>
             </div>
             <div className="mb-4 flex justify-center">
               <img 
@@ -76,11 +72,9 @@ const ServicesSection = ({ invertColors = false }: ServicesSectionProps) => {
         
         <ScrollAnimator animation="slide-in-up" delay={600}>
           <div className="bg-gray-50 border border-gray-200 p-6 rounded-lg h-full flex flex-col">
-            <div className="flex items-center mb-4">
-              <div className="text-[#3F321F] mr-3">
-                <FaChartBar size={36} />
-              </div>
-              <h3 className="text-xl font-semibold text-[#3F321F]">Business Intelligence</h3>
+            <div className="flex items-center justify-center mb-4">
+              
+              <h3 className="text-xl text-center font-semibold text-[#3F321F]">Business Intelligence</h3>
             </div>
             <div className="mb-4 flex justify-center">
               <img 
