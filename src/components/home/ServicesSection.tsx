@@ -12,18 +12,23 @@ interface GlassmorphicIconProps {
 }
 
 const GlassmorphicIcon = ({ children, gradientFrom, gradientTo }: GlassmorphicIconProps) => (
-  <div className="relative w-20 h-20 flex items-center justify-center">
-    {/* Glow effect behind */}
+  <div className="relative w-24 h-24 flex items-center justify-center">
+    {/* Solid background color circle */}
     <div 
-      className="absolute inset-0 rounded-full blur-xl opacity-60"
+      className="absolute w-20 h-20 rounded-full"
       style={{ background: `linear-gradient(135deg, ${gradientFrom}, ${gradientTo})` }}
     />
-    {/* Glassmorphic container */}
+    {/* Soft glow/blur around the background */}
     <div 
-      className="relative w-16 h-16 rounded-full flex items-center justify-center backdrop-blur-md border border-white/30 shadow-lg"
+      className="absolute w-20 h-20 rounded-full blur-lg opacity-50"
+      style={{ background: `linear-gradient(135deg, ${gradientFrom}, ${gradientTo})` }}
+    />
+    {/* Glassmorphic overlay on top */}
+    <div 
+      className="relative w-16 h-16 rounded-full flex items-center justify-center backdrop-blur-sm border border-white/40"
       style={{ 
-        background: `linear-gradient(135deg, ${gradientFrom}40, ${gradientTo}30)`,
-        boxShadow: `0 8px 32px 0 ${gradientFrom}30`
+        background: `rgba(255, 255, 255, 0.15)`,
+        boxShadow: `inset 0 0 20px rgba(255, 255, 255, 0.2), 0 8px 32px 0 ${gradientFrom}40`
       }}
     >
       {children}
