@@ -11,36 +11,51 @@ interface GlassmorphicIconProps {
   gradientTo: string;
 }
 
-const GlassmorphicIcon = ({ children, gradientFrom, gradientTo }: GlassmorphicIconProps) => (
+const GlassmorphicIcon = ({ children }: GlassmorphicIconProps) => (
   <div className="relative w-28 h-28 flex items-center justify-center">
-    {/* Offset blurred background color blob */}
+    {/* Outer neon glow */}
     <div 
-      className="absolute w-20 h-20 rounded-full blur-2xl opacity-70"
+      className="absolute w-24 h-24 rounded-full blur-3xl opacity-60 animate-pulse"
       style={{ 
-        background: `linear-gradient(135deg, ${gradientFrom}, ${gradientTo})`,
-        left: '10%',
-        bottom: '15%'
+        background: `radial-gradient(circle, rgba(147, 51, 234, 0.8), rgba(59, 130, 246, 0.6), transparent)`,
       }}
     />
-    {/* Secondary smaller blob for more organic look */}
+    {/* Secondary glow for depth */}
     <div 
-      className="absolute w-14 h-14 rounded-full blur-xl opacity-50"
+      className="absolute w-20 h-20 rounded-full blur-2xl opacity-50"
       style={{ 
-        background: `${gradientTo}`,
-        right: '15%',
-        top: '20%'
+        background: `radial-gradient(circle, rgba(168, 85, 247, 0.7), rgba(99, 102, 241, 0.5))`,
       }}
     />
-    {/* Glassmorphic circle on top */}
+    {/* Main gradient blob */}
     <div 
-      className="relative w-16 h-16 rounded-full flex items-center justify-center backdrop-blur-md border border-white/50"
+      className="absolute w-16 h-16 rounded-full"
       style={{ 
-        background: `rgba(255, 255, 255, 0.25)`,
-        boxShadow: `inset 0 0 15px rgba(255, 255, 255, 0.3), 0 4px 20px rgba(0, 0, 0, 0.1)`
+        background: `linear-gradient(135deg, hsl(220, 70%, 25%), hsl(270, 70%, 45%))`,
+        boxShadow: `0 0 30px rgba(147, 51, 234, 0.5), 0 0 60px rgba(59, 130, 246, 0.3)`,
+      }}
+    />
+    {/* Frosted glass overlay with bokeh effect */}
+    <div 
+      className="relative w-14 h-14 rounded-full flex items-center justify-center backdrop-blur-sm"
+      style={{ 
+        background: `radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.08))`,
+        boxShadow: `inset 0 2px 10px rgba(255, 255, 255, 0.3), inset 0 -2px 10px rgba(0, 0, 0, 0.1)`,
+        border: '1px solid rgba(255, 255, 255, 0.3)',
       }}
     >
       {children}
     </div>
+    {/* Pastel reflection highlight */}
+    <div 
+      className="absolute w-6 h-2 rounded-full opacity-40"
+      style={{ 
+        background: `linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.8), transparent)`,
+        top: '30%',
+        left: '35%',
+        transform: 'rotate(-20deg)',
+      }}
+    />
   </div>
 );
 
