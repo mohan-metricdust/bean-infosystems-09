@@ -21,11 +21,16 @@ const GlassmorphicIcon = ({ children }: GlassmorphicIconProps) => (
         boxShadow: `0 0 20px rgba(147, 51, 234, 0.4), 0 0 40px rgba(59, 130, 246, 0.2)`,
       }}
     >
-      {/* Gradient background blob - contained within circle */}
+      {/* Gradient background blob - offset to show white space at top */}
       <div 
-        className="absolute inset-0"
+        className="absolute"
         style={{ 
           background: `linear-gradient(135deg, hsl(220, 70%, 25%), hsl(270, 70%, 45%))`,
+          top: '15%',
+          left: '-10%',
+          right: '-10%',
+          bottom: '-10%',
+          borderRadius: '50%',
         }}
       />
       {/* Soft inner glow for depth */}
