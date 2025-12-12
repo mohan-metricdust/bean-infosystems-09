@@ -11,12 +11,7 @@ interface ServicesSectionProps {
 
 const GlassmorphicIcon = ({ children }: { children: React.ReactNode }) => (
   <div className="relative w-20 h-20 flex items-center justify-center">
-    {/* Round background color behind glassmorphic */}
-    <div 
-      className="absolute w-14 h-14 rounded-full"
-      style={{ background: '#3F321F' }}
-    />
-    {/* Glassmorphic circle on top */}
+    {/* Glassmorphic circle */}
     <div 
       className="relative w-16 h-16 rounded-full flex items-center justify-center backdrop-blur-md border border-white/50"
       style={{ 
