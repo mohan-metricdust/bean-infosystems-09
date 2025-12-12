@@ -5,31 +5,16 @@ import ScrollAnimator from '@/components/ui/ScrollAnimator';
 import PageSection from '@/components/layout/PageSection';
 import { Link } from 'react-router-dom';
 
-interface GlassmorphicIconProps {
-  children: React.ReactNode;
-  gradientFrom: string;
-  gradientTo: string;
+interface ServicesSectionProps {
+  invertColors?: boolean;
 }
 
-const GlassmorphicIcon = ({ children, gradientFrom, gradientTo }: GlassmorphicIconProps) => (
-  <div className="relative w-28 h-28 flex items-center justify-center">
-    {/* Offset blurred background color blob */}
+const GlassmorphicIcon = ({ children }: { children: React.ReactNode }) => (
+  <div className="relative w-20 h-20 flex items-center justify-center">
+    {/* Round background color behind glassmorphic */}
     <div 
-      className="absolute w-20 h-20 rounded-full blur-2xl opacity-70"
-      style={{ 
-        background: `linear-gradient(135deg, ${gradientFrom}, ${gradientTo})`,
-        left: '10%',
-        bottom: '15%'
-      }}
-    />
-    {/* Secondary smaller blob for more organic look */}
-    <div 
-      className="absolute w-14 h-14 rounded-full blur-xl opacity-50"
-      style={{ 
-        background: `${gradientTo}`,
-        right: '15%',
-        top: '20%'
-      }}
+      className="absolute w-14 h-14 rounded-full"
+      style={{ background: '#3F321F' }}
     />
     {/* Glassmorphic circle on top */}
     <div 
@@ -59,8 +44,8 @@ const ServicesSection = ({ invertColors = false }: ServicesSectionProps) => {
         <ScrollAnimator animation="slide-in-up" delay={200}>
           <div className="bg-gray-50 border border-gray-200 p-6 rounded-lg h-full flex flex-col">
             <div className="mb-4 flex justify-center">
-              <GlassmorphicIcon gradientFrom="#8B5CF6" gradientTo="#A78BFA">
-                <Brain className="w-7 h-7 text-white" strokeWidth={1.5} />
+              <GlassmorphicIcon>
+                <Brain className="w-7 h-7 text-[#3F321F]" strokeWidth={1.5} />
               </GlassmorphicIcon>
             </div>
             <div className="flex items-center justify-center mb-4">
@@ -82,8 +67,8 @@ const ServicesSection = ({ invertColors = false }: ServicesSectionProps) => {
         <ScrollAnimator animation="slide-in-up" delay={400}>
           <div className="bg-gray-50 border border-gray-200 p-6 rounded-lg h-full flex flex-col">
             <div className="mb-4 flex justify-center">
-              <GlassmorphicIcon gradientFrom="#10B981" gradientTo="#34D399">
-                <Users className="w-7 h-7 text-white" strokeWidth={1.5} />
+              <GlassmorphicIcon>
+                <Users className="w-7 h-7 text-[#3F321F]" strokeWidth={1.5} />
               </GlassmorphicIcon>
             </div>
             <div className="flex items-center justify-center mb-4">
@@ -105,8 +90,8 @@ const ServicesSection = ({ invertColors = false }: ServicesSectionProps) => {
         <ScrollAnimator animation="slide-in-up" delay={600}>
           <div className="bg-gray-50 border border-gray-200 p-6 rounded-lg h-full flex flex-col">
             <div className="mb-4 flex justify-center">
-              <GlassmorphicIcon gradientFrom="#F59E0B" gradientTo="#FBBF24">
-                <BarChart3 className="w-7 h-7 text-white" strokeWidth={1.5} />
+              <GlassmorphicIcon>
+                <BarChart3 className="w-7 h-7 text-[#3F321F]" strokeWidth={1.5} />
               </GlassmorphicIcon>
             </div>
             <div className="flex items-center justify-center mb-4">
