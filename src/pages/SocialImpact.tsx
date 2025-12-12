@@ -1,12 +1,16 @@
-﻿import React from 'react';
+import React from 'react';
 import PageHero from '@/components/layout/PageHero';
 import PageSection from '@/components/layout/PageSection';
 import { Card } from '@/components/ui/card';
-import { HeartHandshake, Users, HandCoins, Building2, CheckCircle2 } from 'lucide-react';
+import {
+  HeartHandshakeBlobIcon,
+  UsersBlobIcon,
+  Building2BlobIcon
+} from '@/components/ui/BlobIcons';
 
 const FlowStep = ({ icon, title, description }: { icon: React.ReactNode; title: string; description: string; }) => (
   <Card className="p-6 md:p-8 text-center border-2 hover:border-[#D4A76A]/40 transition-all duration-300">
-    <div className="w-14 h-14 mx-auto rounded-full bg-[#D4A76A]/10 text-[#D4A76A] flex items-center justify-center mb-4">
+    <div className="flex items-center justify-center mb-4">
       {icon}
     </div>
     <h4 className="text-xl font-semibold text-gray-900 mb-2">{title}</h4>
@@ -49,17 +53,17 @@ const SocialImpact = () => {
             <div className="hidden md:block absolute left-0 right-0 top-1/2 h-0.5 bg-white/30"></div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 relative z-10">
               <FlowStep
-                icon={<Building2 size={22} color='black'/>}
+                icon={<Building2BlobIcon size="md" />}
                 title="Nonprofits"
                 description="Organizations on the frontlines seeking sustainable support and tools."
               />
               <FlowStep
-                icon={<HeartHandshake size={22} color='black'/>}
+                icon={<HeartHandshakeBlobIcon size="md" />}
                 title="Bean Infosystems"
                 description="Subsidized development + strategic guidance to maximize impact."
               />
               <FlowStep
-                icon={<Users size={22} color='black'/>}
+                icon={<UsersBlobIcon size="md" />}
                 title="SocialBirds Community"
                 description="Brings donors, volunteers, and supporters together to act."
               />

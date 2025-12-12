@@ -3,22 +3,22 @@ import React from 'react';
 import PageHero from '@/components/layout/PageHero';
 import PageSection from '@/components/layout/PageSection';
 import { Card } from '@/components/ui/card';
-import { 
-  Lightbulb, 
-  Target, 
-  Heart, 
-  Users, 
-  Wrench, 
-  Edit, 
-  Share2, 
-  Map,
-  Calendar,
-  Building,
-  Globe,
-  Rocket,
-  Zap,
-  BookOpen
-} from 'lucide-react';
+import {
+  LightbulbBlobIcon,
+  TargetBlobIcon,
+  HeartBlobIcon,
+  UsersBlobIcon,
+  WrenchBlobIcon,
+  EditBlobIcon,
+  Share2BlobIcon,
+  MapBlobIcon,
+  CalendarBlobIcon,
+  BuildingBlobIcon,
+  GlobeBlobIcon,
+  RocketBlobIcon,
+  ZapBlobIcon,
+  BookOpenBlobIcon
+} from '@/components/ui/BlobIcons';
 
 const About = () => {
   const timeline = [
@@ -26,37 +26,37 @@ const About = () => {
       year: "2016",
       title: "Founding",
       description: "Bean Infosystems was founded with a clear vision to create innovative software that helps businesses work smarter and grow faster.",
-      icon: <Building size={24} />
+      icon: <BuildingBlobIcon size="sm" />
     },
     {
       year: "2017",
       title: "Expansion",
       description: "Enhanced our services with consulting and advisory capabilities to better support client needs.",
-      icon: <Rocket size={24} />
+      icon: <RocketBlobIcon size="sm" />
     },
     {
       year: "2018",
       title: "Global Presence",
       description: "Opened a technology-focused Offshore Development Center in India.",
-      icon: <Globe size={24} />
+      icon: <GlobeBlobIcon size="sm" />
     },
     {
       year: "2019",
       title: "SocialBirds Launch",
       description: "Rolled out \"SocialBirds.org,\" a platform built to bridge philanthropists and nonprofit organizations.",
-      icon: <Zap size={24} />
+      icon: <ZapBlobIcon size="sm" />
     },
     {
       year: "2023",
       title: "AI Transformation",
       description: "Pivoted to helping businesses navigate AI-driven digital transformation in a rapidly evolving landscape.",
-      icon: <BookOpen size={24} />
+      icon: <BookOpenBlobIcon size="sm" />
     },
     {
       year: "Current",
       title: "Shaping Tomorrow with AI",
       description: "Advancing with next-generation AI capabilities to better support our clients' changing demands.",
-      icon: <Calendar size={24} />
+      icon: <CalendarBlobIcon size="sm" />
     }
   ];
   
@@ -107,8 +107,8 @@ const About = () => {
                   <div className="absolute top-0 left-0 w-full h-full bg-card rounded-lg transform rotate-6 shadow-lg"></div>
                   <div className="absolute top-0 left-0 w-full h-full bg-card rounded-lg transform -rotate-3 shadow-lg"></div>
                   <div className="relative w-full h-full bg-card rounded-lg shadow-lg p-6 flex flex-col justify-center">
-                    <div className="text-bean mb-4 flex justify-center">
-                      <Users size={40} color='black'/>
+                    <div className="mb-4 flex justify-center">
+                      <UsersBlobIcon size="lg" />
                     </div>
                     <h3 className="text-2xl font-bold mb-2">Our Mission</h3>
                     <p className="text-foreground/70">
@@ -128,8 +128,8 @@ const About = () => {
       <PageSection dark>
         <div className="grid md:grid-cols-3 gap-8">
           <Card className="p-6">
-            <div className="text-bean mb-4">
-              <Lightbulb size={36} color='black' />
+            <div className="mb-4 flex justify-center">
+              <LightbulbBlobIcon size="lg" />
             </div>
             <h3 className="text-xl font-bold mb-3">Our Mission</h3>
             <p className="text-foreground/70">
@@ -138,8 +138,8 @@ const About = () => {
             </p>
           </Card>
           <Card className="p-6">
-            <div className="text-bean mb-4 flex justify-center">
-              <Target size={36} color='black' />
+            <div className="mb-4 flex justify-center">
+              <TargetBlobIcon size="lg" />
             </div>
             <h3 className="text-xl font-bold mb-3">Our Vision</h3>
             <p className="text-foreground/70">
@@ -148,8 +148,8 @@ const About = () => {
             </p>
           </Card>
           <Card className="p-6">
-            <div className="text-bean mb-4 flex justify-center">
-              <Heart size={36} color='black' />
+            <div className="mb-4 flex justify-center">
+              <HeartBlobIcon size="lg" />
             </div>
             <h3 className="text-xl font-bold mb-3">Our Values</h3>
             <p className='text-foreground/70'>
@@ -192,7 +192,7 @@ const About = () => {
             {timeline.map((item, index) => (
               <div key={index} className={`relative grid md:grid-cols-2 gap-6 items-center`}>
                 {/* Icon marker instead of number */}
-                <div className="absolute left-1/2 transform -translate-x-1/2 w-12 h-12 rounded-full bg-bean flex items-center justify-center text-white z-10">
+                <div className="absolute left-1/2 transform -translate-x-1/2 z-10">
                   {item.icon}
                 </div>
                 
@@ -218,8 +218,8 @@ const About = () => {
       <PageSection dark title="Our Approach" subtitle="How we deliver exceptional results for our clients">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           <Card className="p-6">
-            <div className="text-bean mb-4 flex justify-center">
-              <Edit size={32} color='black'/>
+            <div className="mb-4 flex justify-center">
+              <EditBlobIcon size="md" />
             </div>
             <h3 className="text-lg font-bold mb-2">Discovery</h3>
             <p className="text-foreground/70">
@@ -227,8 +227,8 @@ const About = () => {
             </p>
           </Card>
           <Card className="p-6">
-            <div className="text-bean mb-4 flex justify-center">
-              <Map size={32} color='black'/>
+            <div className="mb-4 flex justify-center">
+              <MapBlobIcon size="md" />
             </div>
             <h3 className="text-lg font-bold mb-2">Strategy</h3>
             <p className="text-foreground/70">
@@ -236,8 +236,8 @@ const About = () => {
             </p>
           </Card>
           <Card className="p-6">
-            <div className="text-bean mb-4 flex justify-center">
-              <Wrench size={32} color='black' />
+            <div className="mb-4 flex justify-center">
+              <WrenchBlobIcon size="md" />
             </div>
             <h3 className="text-lg font-bold mb-2">Implementation</h3>
             <p className="text-foreground/70">
@@ -245,8 +245,8 @@ const About = () => {
             </p>
           </Card>
           <Card className="p-6">
-            <div className="text-bean mb-4 flex justify-center">
-              <Share2 size={32} color='black'/>
+            <div className="mb-4 flex justify-center">
+              <Share2BlobIcon size="md" />
             </div>
             <h3 className="text-lg font-bold mb-2">Optimization</h3>
             <p className="text-foreground/70">

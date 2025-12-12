@@ -3,7 +3,7 @@ import React from 'react';
 import PageHero from '@/components/layout/PageHero';
 import PageSection from '@/components/layout/PageSection';
 import { Card } from '@/components/ui/card';
-import { Star, Quote } from 'lucide-react';
+import { StarBlobIcon } from '@/components/ui/BlobIcons';
 
 const Clients = () => {
   // Placeholder client logos
@@ -107,8 +107,8 @@ const Clients = () => {
           {testimonials.map((testimonial, index) => (
             <Card key={index} className="p-6 relative hover:border-bean/30 transition-all duration-300">
               {/* Quote icon */}
-              <div className="absolute top-6 right-6 text-bean/10">
-                <Quote size={48} />
+              <div className="absolute top-6 right-6 opacity-20 text-bean text-4xl">
+                "
               </div>
               
               <div className="flex items-start mb-4">
@@ -120,11 +120,9 @@ const Clients = () => {
                   <p className="text-foreground/60">{testimonial.role}</p>
                   <div className="flex mt-1">
                     {[...Array(5)].map((_, i) => (
-                      <Star 
-                        key={i} 
-                        size={16} 
-                        className={i < testimonial.rating ? "text-bean fill-bean" : "text-foreground/30"} 
-                      />
+                      <div key={i} className={i < testimonial.rating ? "text-bean" : "text-foreground/30"}>
+                        ★
+                      </div>
                     ))}
                   </div>
                 </div>
@@ -159,8 +157,8 @@ const Clients = () => {
                 <div className="md:col-span-2">
                   <div className="bg-gradient-to-br from-bean/10 to-transparent rounded-lg p-6 h-full flex items-center justify-center">
                     <div className="text-center">
-                      <div className="text-bean mb-3">
-                        <Star size={48} className="mx-auto fill-bean/20" />
+                      <div className="mb-3 flex justify-center">
+                        <StarBlobIcon size="xl" />
                       </div>
                       <div className="text-2xl font-bold">Success</div>
                       <p className="text-foreground/70 mt-1">Delivering exceptional results</p>

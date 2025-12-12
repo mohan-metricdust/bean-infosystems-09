@@ -1,27 +1,27 @@
-﻿import React from 'react';
+import React from 'react';
 import PageHero from '@/components/layout/PageHero';
 import PageSection from '@/components/layout/PageSection';
 import { Card } from '@/components/ui/card';
-import { 
-  TrendingUp, 
-  RefreshCw, 
-  Users, 
-  Target,
-  BookOpen,
-  Award,
-  Zap,
-  CheckCircle
-} from 'lucide-react';
+import { CheckCircle } from 'lucide-react';
 import MagneticButton from '@/components/ui/MagneticButton';
 import { Link } from 'react-router-dom';
 import CtaSection from '@/components/home/CtaSection';
+import {
+  TrendingUpBlobIcon,
+  RefreshCwBlobIcon,
+  UsersBlobIcon,
+  TargetBlobIcon,
+  BookOpenBlobIcon,
+  AwardBlobIcon,
+  CheckCircleBlobIcon
+} from '@/components/ui/BlobIcons';
 
 const Training = () => {
   const trainingServices = [
     {
       title: "Upskilling",
       description: "Looking to fully build your in-house capabilities? We can provide the training and development you need to enhance your team's existing skills and take them to the next level.",
-      icon: <TrendingUp size={32} />,
+      icon: <TrendingUpBlobIcon size="lg" />,
       features: [
         "Advanced technical skills development",
         "Industry-specific training programs",
@@ -32,7 +32,7 @@ const Training = () => {
     {
       title: "Reskilling",
       description: "Have the talent but lack the crucial skills they need to get your projects moving? We can help your team acquire new skills and transition into different roles effectively.",
-      icon: <RefreshCw size={32} />,
+      icon: <RefreshCwBlobIcon size="lg" />,
       features: [
         "Career transition support",
         "New technology adoption",
@@ -43,7 +43,7 @@ const Training = () => {
     {
       title: "Human Skills Development",
       description: "We can facilitate the development of advanced cognitive capabilities, leadership skills, and soft skills that are essential for success in the modern workplace.",
-      icon: <Users size={32} />,
+      icon: <UsersBlobIcon size="lg" />,
       features: [
         "Leadership development programs",
         "Communication skills training",
@@ -57,22 +57,22 @@ const Training = () => {
     {
       title: "Customized Training Programs",
       description: "Tailored training solutions designed specifically for your organization's needs and objectives.",
-      icon: <Target size={24} />
+      icon: <TargetBlobIcon size="md" />
     },
     {
       title: "Expert Instructors",
       description: "Learn from industry experts with years of practical experience in their respective fields.",
-      icon: <Award size={24} />
+      icon: <AwardBlobIcon size="md" />
     },
     {
       title: "Flexible Learning Options",
       description: "Choose from in-person, online, or hybrid learning formats that fit your schedule and preferences.",
-      icon: <BookOpen size={24} />
+      icon: <BookOpenBlobIcon size="md" />
     },
     {
       title: "Certification Support",
       description: "Get assistance with industry certifications and professional development credentials.",
-      icon: <CheckCircle size={24} />
+      icon: <CheckCircleBlobIcon size="md" />
     }
   ];
 
@@ -108,10 +108,8 @@ const Training = () => {
           {trainingServices.map((service, index) => (
             <Card key={index} className="p-8 hover:shadow-lg transition-all duration-300 border-2 hover:border-[#D4A76A]/30">
               <div className="text-center mb-6">
-                <div className="w-20 h-20 bg-[#000000]/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <div className="text-[#000000]">
-                    {service.icon}
-                  </div>
+                <div className="flex items-center justify-center mx-auto mb-4">
+                  {service.icon}
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">{service.title}</h3>
                 <p className="text-gray-700 leading-relaxed mb-6">
