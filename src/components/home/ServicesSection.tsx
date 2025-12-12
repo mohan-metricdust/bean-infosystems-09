@@ -1,10 +1,35 @@
 
 import React from 'react';
-import { ArrowRight } from 'lucide-react';
-import { FaBrain, FaUsers, FaChartBar } from 'react-icons/fa';
+import { ArrowRight, Brain, Users, BarChart3 } from 'lucide-react';
 import ScrollAnimator from '@/components/ui/ScrollAnimator';
 import PageSection from '@/components/layout/PageSection';
 import { Link } from 'react-router-dom';
+
+interface GlassmorphicIconProps {
+  children: React.ReactNode;
+  gradientFrom: string;
+  gradientTo: string;
+}
+
+const GlassmorphicIcon = ({ children, gradientFrom, gradientTo }: GlassmorphicIconProps) => (
+  <div className="relative w-20 h-20 flex items-center justify-center">
+    {/* Glow effect behind */}
+    <div 
+      className="absolute inset-0 rounded-full blur-xl opacity-60"
+      style={{ background: `linear-gradient(135deg, ${gradientFrom}, ${gradientTo})` }}
+    />
+    {/* Glassmorphic container */}
+    <div 
+      className="relative w-16 h-16 rounded-full flex items-center justify-center backdrop-blur-md border border-white/30 shadow-lg"
+      style={{ 
+        background: `linear-gradient(135deg, ${gradientFrom}40, ${gradientTo}30)`,
+        boxShadow: `0 8px 32px 0 ${gradientFrom}30`
+      }}
+    >
+      {children}
+    </div>
+  </div>
+);
 
 interface ServicesSectionProps {
   invertColors?: boolean;
@@ -20,16 +45,13 @@ const ServicesSection = ({ invertColors = false }: ServicesSectionProps) => {
       <div className="grid md:grid-cols-3 gap-6">
         <ScrollAnimator animation="slide-in-up" delay={200}>
           <div className="bg-gray-50 border border-gray-200 p-6 rounded-lg h-full flex flex-col">
-            <div className="flex items-center justify-center mb-4">
-              
-              <h3 className="text-xl text-center font-semibold text-[#3F321F]">AI Solutions & Integration</h3>
-            </div>
             <div className="mb-4 flex justify-center">
-              <img 
-                src="/lovable-uploads/ddc5eb40-c257-426b-abc1-2402895cddc8.png" 
-                alt="AI Solutions" 
-                className="w-20 h-20 object-contain"
-              />
+              <GlassmorphicIcon gradientFrom="#8B5CF6" gradientTo="#A78BFA">
+                <Brain className="w-7 h-7 text-white" strokeWidth={1.5} />
+              </GlassmorphicIcon>
+            </div>
+            <div className="flex items-center justify-center mb-4">
+              <h3 className="text-xl text-center font-semibold text-[#3F321F]">AI Solutions & Integration</h3>
             </div>
             <p className="text-gray-700 mb-4 flex-grow">
               Harness the power of artificial intelligence to automate processes, gain insights, and drive innovation. 
@@ -46,16 +68,13 @@ const ServicesSection = ({ invertColors = false }: ServicesSectionProps) => {
         
         <ScrollAnimator animation="slide-in-up" delay={400}>
           <div className="bg-gray-50 border border-gray-200 p-6 rounded-lg h-full flex flex-col">
-            <div className="flex items-center justify-center mb-4">
-              
-              <h3 className="text-xl text-center font-semibold text-[#3F321F]">Consulting and Advisory</h3>
-            </div>
             <div className="mb-4 flex justify-center">
-              <img 
-                src="/lovable-uploads/9fa67d1f-5518-4df6-8ce4-72ed66194677.png" 
-                alt="Consulting Services" 
-                className="w-20 h-20 object-contain"
-              />
+              <GlassmorphicIcon gradientFrom="#10B981" gradientTo="#34D399">
+                <Users className="w-7 h-7 text-white" strokeWidth={1.5} />
+              </GlassmorphicIcon>
+            </div>
+            <div className="flex items-center justify-center mb-4">
+              <h3 className="text-xl text-center font-semibold text-[#3F321F]">Consulting and Advisory</h3>
             </div>
             <p className="text-gray-700 mb-4 flex-grow">
               Strategic guidance from industry experts to optimize your technology investments and improve business processes. 
@@ -72,16 +91,13 @@ const ServicesSection = ({ invertColors = false }: ServicesSectionProps) => {
         
         <ScrollAnimator animation="slide-in-up" delay={600}>
           <div className="bg-gray-50 border border-gray-200 p-6 rounded-lg h-full flex flex-col">
-            <div className="flex items-center justify-center mb-4">
-              
-              <h3 className="text-xl text-center font-semibold text-[#3F321F]">Business Intelligence</h3>
-            </div>
             <div className="mb-4 flex justify-center">
-              <img 
-                src="/lovable-uploads/04d253b6-9223-4fae-9436-7505b20214c6.png" 
-                alt="Business Intelligence" 
-                className="w-20 h-20 object-contain"
-              />
+              <GlassmorphicIcon gradientFrom="#F59E0B" gradientTo="#FBBF24">
+                <BarChart3 className="w-7 h-7 text-white" strokeWidth={1.5} />
+              </GlassmorphicIcon>
+            </div>
+            <div className="flex items-center justify-center mb-4">
+              <h3 className="text-xl text-center font-semibold text-[#3F321F]">Business Intelligence</h3>
             </div>
             <p className="text-gray-700 mb-4 flex-grow">
               Transform your data into actionable insights with our comprehensive business intelligence solutions. 
