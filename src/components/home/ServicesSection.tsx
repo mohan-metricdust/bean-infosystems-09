@@ -12,50 +12,51 @@ interface GlassmorphicIconProps {
 }
 
 const GlassmorphicIcon = ({ children }: GlassmorphicIconProps) => (
-  <div className="relative w-28 h-28 flex items-center justify-center">
-    {/* Outer neon glow */}
+  <div className="relative w-16 h-16 flex items-center justify-center">
+    {/* Glassmorphic container with clipped background */}
     <div 
-      className="absolute w-24 h-24 rounded-full blur-3xl opacity-60 animate-pulse"
+      className="relative w-16 h-16 rounded-full overflow-hidden flex items-center justify-center"
       style={{ 
-        background: `radial-gradient(circle, rgba(147, 51, 234, 0.8), rgba(59, 130, 246, 0.6), transparent)`,
-      }}
-    />
-    {/* Secondary glow for depth */}
-    <div 
-      className="absolute w-20 h-20 rounded-full blur-2xl opacity-50"
-      style={{ 
-        background: `radial-gradient(circle, rgba(168, 85, 247, 0.7), rgba(99, 102, 241, 0.5))`,
-      }}
-    />
-    {/* Main gradient blob */}
-    <div 
-      className="absolute w-16 h-16 rounded-full"
-      style={{ 
-        background: `linear-gradient(135deg, hsl(220, 70%, 25%), hsl(270, 70%, 45%))`,
-        boxShadow: `0 0 30px rgba(147, 51, 234, 0.5), 0 0 60px rgba(59, 130, 246, 0.3)`,
-      }}
-    />
-    {/* Frosted glass overlay with bokeh effect */}
-    <div 
-      className="relative w-14 h-14 rounded-full flex items-center justify-center backdrop-blur-sm"
-      style={{ 
-        background: `radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.08))`,
-        boxShadow: `inset 0 2px 10px rgba(255, 255, 255, 0.3), inset 0 -2px 10px rgba(0, 0, 0, 0.1)`,
         border: '1px solid rgba(255, 255, 255, 0.3)',
+        boxShadow: `0 0 20px rgba(147, 51, 234, 0.4), 0 0 40px rgba(59, 130, 246, 0.2)`,
       }}
     >
-      {children}
+      {/* Gradient background blob - contained within circle */}
+      <div 
+        className="absolute inset-0"
+        style={{ 
+          background: `linear-gradient(135deg, hsl(220, 70%, 25%), hsl(270, 70%, 45%))`,
+        }}
+      />
+      {/* Soft inner glow for depth */}
+      <div 
+        className="absolute inset-0 opacity-60"
+        style={{ 
+          background: `radial-gradient(circle at 30% 30%, rgba(168, 85, 247, 0.6), transparent 60%)`,
+        }}
+      />
+      {/* Frosted glass overlay */}
+      <div 
+        className="absolute inset-0 backdrop-blur-sm"
+        style={{ 
+          background: `radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.05))`,
+        }}
+      />
+      {/* Pastel reflection highlight */}
+      <div 
+        className="absolute w-8 h-2 rounded-full opacity-40"
+        style={{ 
+          background: `linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.8), transparent)`,
+          top: '20%',
+          left: '15%',
+          transform: 'rotate(-20deg)',
+        }}
+      />
+      {/* Icon */}
+      <div className="relative z-10">
+        {children}
+      </div>
     </div>
-    {/* Pastel reflection highlight */}
-    <div 
-      className="absolute w-6 h-2 rounded-full opacity-40"
-      style={{ 
-        background: `linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.8), transparent)`,
-        top: '30%',
-        left: '35%',
-        transform: 'rotate(-20deg)',
-      }}
-    />
   </div>
 );
 
