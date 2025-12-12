@@ -12,23 +12,31 @@ interface GlassmorphicIconProps {
 }
 
 const GlassmorphicIcon = ({ children, gradientFrom, gradientTo }: GlassmorphicIconProps) => (
-  <div className="relative w-24 h-24 flex items-center justify-center">
-    {/* Solid background color circle */}
+  <div className="relative w-28 h-28 flex items-center justify-center">
+    {/* Offset blurred background color blob */}
     <div 
-      className="absolute w-20 h-20 rounded-full"
-      style={{ background: `linear-gradient(135deg, ${gradientFrom}, ${gradientTo})` }}
-    />
-    {/* Soft glow/blur around the background */}
-    <div 
-      className="absolute w-20 h-20 rounded-full blur-lg opacity-50"
-      style={{ background: `linear-gradient(135deg, ${gradientFrom}, ${gradientTo})` }}
-    />
-    {/* Glassmorphic overlay on top */}
-    <div 
-      className="relative w-16 h-16 rounded-full flex items-center justify-center backdrop-blur-sm border border-white/40"
+      className="absolute w-20 h-20 rounded-full blur-2xl opacity-70"
       style={{ 
-        background: `rgba(255, 255, 255, 0.15)`,
-        boxShadow: `inset 0 0 20px rgba(255, 255, 255, 0.2), 0 8px 32px 0 ${gradientFrom}40`
+        background: `linear-gradient(135deg, ${gradientFrom}, ${gradientTo})`,
+        left: '10%',
+        bottom: '15%'
+      }}
+    />
+    {/* Secondary smaller blob for more organic look */}
+    <div 
+      className="absolute w-14 h-14 rounded-full blur-xl opacity-50"
+      style={{ 
+        background: `${gradientTo}`,
+        right: '15%',
+        top: '20%'
+      }}
+    />
+    {/* Glassmorphic circle on top */}
+    <div 
+      className="relative w-16 h-16 rounded-full flex items-center justify-center backdrop-blur-md border border-white/50"
+      style={{ 
+        background: `rgba(255, 255, 255, 0.25)`,
+        boxShadow: `inset 0 0 15px rgba(255, 255, 255, 0.3), 0 4px 20px rgba(0, 0, 0, 0.1)`
       }}
     >
       {children}
