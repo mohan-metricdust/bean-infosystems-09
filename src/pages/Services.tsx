@@ -2,21 +2,28 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import PageHero from '@/components/layout/PageHero';
 import PageSection from '@/components/layout/PageSection';
-import { 
-  Code, Users, BarChart, ArrowRight, Lightbulb, 
-  Database, Activity, BarChart2, 
-  Target, ThumbsUp, Star 
-} from 'lucide-react'; 
+import { ArrowRight } from 'lucide-react'; 
 import { Card } from '@/components/ui/card';
 import AiServicesSection from '@/components/home/AiServicesSection';
+import {
+  CodeBlobIcon,
+  UsersBlobIcon,
+  BarChartBlobIcon,
+  LightbulbBlobIcon,
+  DatabaseBlobIcon,
+  BrainBlobIcon,
+  ChartBlobIcon,
+  TargetBlobIcon,
+  ThumbsUpBlobIcon,
+  StarBlobIcon
+} from '@/components/ui/BlobIcons';
 
 const Services = () => {
-    const iconCircleClasses = "w-16 h-16 mx-auto rounded-full bg-[#3F321F] flex items-center justify-center mb-4";
     const services = [
         {
             title: "Application Development",
             description: "Custom software applications designed to meet your unique business requirements and drive digital transformation.",
-            icon: <Code size={40} color='black'/>,
+            icon: <CodeBlobIcon size="md" />,
             link: "/services/application-development",
             benefits: [
                 "Tailored solutions that perfectly match your needs",
@@ -28,7 +35,7 @@ const Services = () => {
         {
             title: "Consulting Services",
             description: "Strategic guidance from industry experts to optimize your technology investments and improve business processes.",
-            icon: <Users size={40} color='black'/>,
+            icon: <UsersBlobIcon size="md" />,
             link: "/services/consulting-services",
             benefits: [
                 "Expert analysis of your current technology landscape",
@@ -40,7 +47,7 @@ const Services = () => {
         {
             title: "Advisory Services",
             description: "Insights and recommendations to help you navigate digital trends and make informed business decisions.",
-            icon: <BarChart size={40} color='black'/>,
+            icon: <BarChartBlobIcon size="md" />,
             link: "/services/advisory-services",
             benefits: [
                 "Industry trend analysis and insights",
@@ -124,28 +131,28 @@ const Services = () => {
                     <div className="grid grid-cols-2 gap-4">
                         <div className="space-y-4 pt-4">
                             <Card className="p-4 flex items-center glass-card">
-                                <div className="text-bean mr-3">
-                                    <Lightbulb size={24} color='black'/>
+                                <div className="mr-3">
+                                    <LightbulbBlobIcon size="sm" />
                                 </div>
                                 <span className="font-medium">Innovative</span>
                             </Card>
                             <Card className="p-4 flex items-center glass-card translate-y-6">
-                                <div className="text-bean mr-3">
-                                    <Lightbulb size={24} color='black'/>
+                                <div className="mr-3">
+                                    <LightbulbBlobIcon size="sm" />
                                 </div>
                                 <span className="font-medium">Strategic</span>
                             </Card>
                         </div>
                         <div className="space-y-4 pt-4">
                             <Card className="p-4 flex items-center glass-card">
-                                <div className="text-bean mr-3">
-                                    <Lightbulb size={24} color='black'/>
+                                <div className="mr-3">
+                                    <LightbulbBlobIcon size="sm" />
                                 </div>
                                 <span className="font-medium">Collaborative</span>
                             </Card>
                             <Card className="p-4 flex items-center glass-card translate-y-6">
-                                <div className="text-bean mr-3">
-                                    <Lightbulb size={24} color='black'/>
+                                <div className="mr-3">
+                                    <LightbulbBlobIcon size="sm" />
                                 </div>
                                 <span className="font-medium">Results-Driven</span>
                             </Card>
@@ -161,7 +168,7 @@ const Services = () => {
                         <Card key={index} className={`p-8 ${index % 2 === 0 ? '' : ''}`}>
                             <div className="grid md:grid-cols-2 gap-8 ">
                                 <div className={`${index % 2 !== 0 ? 'md:order-2' : ''}`}>
-                                    <div className="text-bean mb-4 flex justify-start">
+                                    <div className="mb-4 flex justify-start">
                                         {service.icon}
                                     </div>
                                     <h3 className="text-2xl font-bold mb-3 flex justify-start">{service.title}</h3>
@@ -192,8 +199,8 @@ const Services = () => {
                                     <div className="aspect-square bg-gradient-to-br from-bean/20 to-transparent rounded-xl p-8 flex items-center justify-center">
                                         <div className="w-full max-w-xs aspect-square relative">
                                             <div className="absolute inset-0 flex items-center justify-center">
-                                                <div className="text-bean opacity-10">
-                                                    {React.cloneElement(service.icon, { size: 180 })}
+                                                <div className="opacity-30 scale-[3]">
+                                                    {service.icon}
                                                 </div>
                                             </div>
                                             <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-transparent to-background/80 rounded-xl">
@@ -224,8 +231,8 @@ const Services = () => {
                     
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
                         <Card className="p-6 border-l-4 border-l-bean">
-                            <div className="text-bean mb-4 flex justify-center">
-                                <Database size={28} color='black'/>
+                            <div className="mb-4 flex justify-center">
+                                <DatabaseBlobIcon size="md" />
                             </div>
                             <h3 className="text-xl font-bold mb-2">Data Engineering</h3>
                             <p className="text-foreground/70">
@@ -234,8 +241,8 @@ const Services = () => {
                         </Card>
                         
                         <Card className="p-6 border-l-4 border-l-bean">
-                            <div className="text-bean mb-4 flex justify-center">
-                                <Activity size={28} color='black'/>
+                            <div className="mb-4 flex justify-center">
+                                <BrainBlobIcon size="md" />
                             </div>
                             <h3 className="text-xl font-bold mb-2">Machine Learning & AI</h3>
                             <p className="text-foreground/70">
@@ -244,8 +251,8 @@ const Services = () => {
                         </Card>
                         
                         <Card className="p-6 border-l-4 border-l-bean">
-                            <div className="text-bean mb-4 flex justify-center">
-                                <BarChart2 size={28} color='black'/>
+                            <div className="mb-4 flex justify-center">
+                                <ChartBlobIcon size="md" />
                             </div>
                             <h3 className="text-xl font-bold mb-2">Data Analytics & Visualization</h3>
                             <p className="text-foreground/70">
@@ -276,8 +283,8 @@ const Services = () => {
                     
                     {/* 1. Obsessive Customer Focus */}
                     <div className="p-4">
-                        <div className={iconCircleClasses}>
-                        <Target size={30} color='white'/> 
+                        <div className="flex justify-center mb-4">
+                          <TargetBlobIcon size="lg" />
                         </div>
                         <h3 className="text-xl font-semibold mb-2 text-gray-900">Obsessive customer focus</h3>
                         <p className="text-gray-600 text-sm">
@@ -287,8 +294,8 @@ const Services = () => {
 
                     {/* 2. Proven Value - Delivery */}
                     <div className="p-4">
-                        <div className={iconCircleClasses}>
-                        <ThumbsUp size={30} color='white'/> 
+                        <div className="flex justify-center mb-4">
+                          <ThumbsUpBlobIcon size="lg" />
                         </div>
                         <h3 className="text-xl font-semibold mb-2 text-gray-900">Proven value- delivery</h3>
                         <p className="text-gray-600 text-sm">
@@ -298,8 +305,8 @@ const Services = () => {
 
                     {/* 3. Industry Leading Expertise */}
                     <div className="p-4">
-                        <div className={iconCircleClasses}>
-                        <Star size={30} color='white'/> 
+                        <div className="flex justify-center mb-4">
+                          <StarBlobIcon size="lg" />
                         </div>
                         <h3 className="text-xl font-semibold mb-2 text-gray-900">Industry leading expertise</h3>
                         <p className="text-gray-600 text-sm">

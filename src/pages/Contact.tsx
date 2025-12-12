@@ -4,7 +4,13 @@ import PageHero from '@/components/layout/PageHero';
 import PageSection from '@/components/layout/PageSection';
 import { Card } from '@/components/ui/card';
 import { useToast } from '@/hooks/use-toast';
-import { MapPin, Phone, Mail, Clock, Send } from 'lucide-react';
+import { Send } from 'lucide-react';
+import {
+  MapPinBlobIcon,
+  PhoneBlobIcon,
+  MailBlobIcon,
+  ClockBlobIcon
+} from '@/components/ui/BlobIcons';
 
 interface FormData {
   name: string;
@@ -59,7 +65,7 @@ const Contact = () => {
 
   const contactInfo = [
     {
-      icon: <MapPin size={24} color='black'/>,
+      icon: <MapPinBlobIcon size="md" />,
       title: "Our Location",
       details: [
         "123 Tech Drive, Innovation Valley",
@@ -68,7 +74,7 @@ const Contact = () => {
       ]
     },
     {
-      icon: <Phone size={24} color='black'/>,
+      icon: <PhoneBlobIcon size="md" />,
       title: "Phone Numbers",
       details: [
         "Main: +1 (555) 123-4567",
@@ -77,7 +83,7 @@ const Contact = () => {
       ]
     },
     {
-      icon: <Mail size={24} color='black' />,
+      icon: <MailBlobIcon size="md" />,
       title: "Email Addresses",
       details: [
         "info@beaninfosystem.com",
@@ -86,7 +92,7 @@ const Contact = () => {
       ]
     },
     {
-      icon: <Clock size={24} color='black'/>,
+      icon: <ClockBlobIcon size="md" />,
       title: "Business Hours",
       details: [
         "Monday - Friday: 9:00 AM - 6:00 PM",
@@ -222,7 +228,7 @@ const Contact = () => {
               {contactInfo.map((info, index) => (
                 <Card key={index} className="p-6">
                   <div className="flex items-center justify-center">
-                    <div className="text-bean mr-4 mt-1">
+                    <div className="mr-4 mt-1">
                       {info.icon}
                     </div>
                     <div>

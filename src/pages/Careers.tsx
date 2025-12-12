@@ -4,7 +4,15 @@ import PageHero from '@/components/layout/PageHero';
 import PageSection from '@/components/layout/PageSection';
 import { Card } from '@/components/ui/card';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Briefcase, Users, Heart, Zap, Lightbulb, Award } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
+import {
+  BriefcaseBlobIcon,
+  UsersBlobIcon,
+  HeartBlobIcon,
+  ZapBlobIcon,
+  LightbulbBlobIcon,
+  AwardBlobIcon
+} from '@/components/ui/BlobIcons';
 
 const Careers = () => {
   // Filter state
@@ -102,22 +110,22 @@ const Careers = () => {
     {
       title: "Competitive Compensation",
       description: "Attractive salary packages, performance bonuses, and equity options.",
-      icon: <Award size={32} color='black'/>
+      icon: <AwardBlobIcon size="md" />
     },
     {
       title: "Health & Wellness",
       description: "Comprehensive health insurance, wellness programs, and mental health support.",
-      icon: <Heart size={32} color='black'/>
+      icon: <HeartBlobIcon size="md" />
     },
     {
       title: "Growth & Development",
       description: "Continuous learning opportunities, mentorship, and career advancement pathways.",
-      icon: <Zap size={32} color='black'/>
+      icon: <ZapBlobIcon size="md" />
     },
     {
       title: "Work-Life Balance",
       description: "Flexible work arrangements, generous PTO, and respect for personal time.",
-      icon: <Lightbulb size={32} color='black'/>
+      icon: <LightbulbBlobIcon size="md" />
     }
   ];
 
@@ -152,8 +160,8 @@ const Careers = () => {
             <div className="aspect-video bg-bean/5 rounded-xl overflow-hidden">
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="text-center p-8">
-                  <div className="text-bean mb-4 flex justify-center">
-                    <Users size={48} color='black'/>
+                  <div className="mb-4 flex justify-center">
+                    <UsersBlobIcon size="xl" />
                   </div>
                   <h3 className="text-2xl font-bold mb-2">Our Team</h3>
                   <p className="text-foreground/70 max-w-xs mx-auto">
@@ -170,8 +178,8 @@ const Careers = () => {
       <PageSection dark title="Our Culture" subtitle="What makes Bean Infosystems a great place to work">
         <div className="grid md:grid-cols-3 gap-6">
           <Card className="p-6">
-            <div className="text-bean mb-4 flex justify-center">
-              <Users size={32} color='black'/>
+            <div className="mb-4 flex justify-center">
+              <UsersBlobIcon size="md" />
             </div>
             <h3 className="text-xl font-semibold mb-2">Collaborative Environment</h3>
             <p className="text-foreground/70">
@@ -180,8 +188,8 @@ const Careers = () => {
             </p>
           </Card>
           <Card className="p-6">
-            <div className="text-bean mb-4 flex justify-center">
-              <Zap size={32} color='black'/>
+            <div className="mb-4 flex justify-center">
+              <ZapBlobIcon size="md" />
             </div>
             <h3 className="text-xl font-semibold mb-2">Innovation-Driven</h3>
             <p className="text-foreground/70">
@@ -190,8 +198,8 @@ const Careers = () => {
             </p>
           </Card>
           <Card className="p-6">
-            <div className="text-bean mb-4 flex justify-center">
-              <Lightbulb size={32} color='black'/>
+            <div className="mb-4 flex justify-center">
+              <LightbulbBlobIcon size="md" />
             </div>
             <h3 className="text-xl font-semibold mb-2">Continuous Learning</h3>
             <p className="text-foreground/70">
@@ -207,7 +215,7 @@ const Careers = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {benefits.map((benefit, index) => (
             <Card key={index} className="p-6">
-              <div className="text-bean mb-4 flex justify-center">
+              <div className="mb-4 flex justify-center">
                 {benefit.icon}
               </div>
               <h3 className="text-xl font-semibold mb-2">{benefit.title}</h3>
@@ -252,7 +260,9 @@ const Careers = () => {
         {/* Job Listings */}
         {filteredJobs.length === 0 ? (
           <div className="text-center py-12">
-            <Briefcase size={48} className="mx-auto text-foreground/30 mb-4" />
+            <div className="mx-auto mb-4 flex justify-center">
+              <BriefcaseBlobIcon size="xl" />
+            </div>
             <h3 className="text-xl font-semibold mb-2">No positions found</h3>
             <p className="text-foreground/70">
               Try adjusting your filters or check back later for new opportunities.
