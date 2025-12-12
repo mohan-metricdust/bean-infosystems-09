@@ -1,67 +1,118 @@
 
 import React from 'react';
-import { ArrowRight, Brain, Users, BarChart3 } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import ScrollAnimator from '@/components/ui/ScrollAnimator';
 import PageSection from '@/components/layout/PageSection';
 import { Link } from 'react-router-dom';
 
-interface GlassmorphicIconProps {
-  children: React.ReactNode;
-  gradientFrom: string;
-  gradientTo: string;
-}
+const BrainBlobIcon = () => (
+  <div className="drop-shadow-xl">
+    <svg viewBox="0 0 80 80" className="w-20 h-20" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <radialGradient id="brainBlobGradient" cx="30%" cy="30%" r="70%">
+          <stop offset="0%" stopColor="rgba(255, 255, 255, 0.6)" />
+          <stop offset="50%" stopColor="rgba(255, 255, 255, 0.4)" />
+          <stop offset="100%" stopColor="rgba(255, 255, 255, 0.2)" />
+        </radialGradient>
+        <radialGradient id="brainBlobGradient2" cx="70%" cy="70%" r="60%">
+          <stop offset="0%" stopColor="hsl(270, 70%, 60%)" />
+          <stop offset="100%" stopColor="hsl(220, 70%, 45%)" />
+        </radialGradient>
+        <filter id="brainShadow" x="-50%" y="-50%" width="200%" height="200%">
+          <feDropShadow dx="0" dy="8" stdDeviation="12" floodColor="rgba(0, 0, 0, 0.1)" />
+        </filter>
+        <filter id="brainColoredShadow" x="-50%" y="-50%" width="200%" height="200%">
+          <feDropShadow dx="0" dy="4" stdDeviation="8" floodColor="rgba(147, 51, 234, 0.3)" />
+        </filter>
+        <filter id="brainGlassmorphic">
+          <feGaussianBlur stdDeviation="1" />
+        </filter>
+        <filter id="brainBackBlur">
+          <feGaussianBlur stdDeviation="2" />
+        </filter>
+      </defs>
+      <path d="M25 45 C25 30, 35 20, 50 22 C65 24, 75 35, 73 50 C71 65, 60 75, 45 73 C30 71, 25 60, 25 45 Z" fill="url(#brainBlobGradient2)" opacity="0.7" filter="url(#brainBackBlur)" />
+      <path d="M15 35 C15 20, 25 10, 40 12 C55 14, 70 25, 68 40 C66 55, 55 68, 40 66 C25 64, 15 50, 15 35 Z" fill="url(#brainBlobGradient)" stroke="rgba(255, 255, 255, 0.6)" strokeWidth="2" filter="url(#brainShadow) url(#brainGlassmorphic) url(#brainColoredShadow)" />
+      <g transform="translate(26, 24) scale(1.2)">
+        <path d="M12 2a4 4 0 0 1 4 4v1a4 4 0 0 1-4 4 4 4 0 0 1-4-4V6a4 4 0 0 1 4-4z" fill="none" stroke="rgba(255, 255, 255, 0.95)" strokeWidth="1.5" />
+        <path d="M12 11v2M8 7H6a2 2 0 0 0-2 2v1a2 2 0 0 0 2 2h2M16 7h2a2 2 0 0 1 2 2v1a2 2 0 0 1-2 2h-2M9 22v-6M15 22v-6M12 13v9" fill="none" stroke="rgba(255, 255, 255, 0.95)" strokeWidth="1.5" />
+        <circle cx="12" cy="5" r="1.5" fill="rgba(255, 255, 255, 0.95)" />
+      </g>
+    </svg>
+  </div>
+);
 
-const GlassmorphicIcon = ({ children }: GlassmorphicIconProps) => (
-  <div className="relative w-16 h-16 flex items-center justify-center">
-    {/* Glassmorphic container with clipped background */}
-    <div 
-      className="relative w-16 h-16 rounded-full overflow-hidden flex items-center justify-center"
-      style={{ 
-        border: '1px solid rgba(255, 255, 255, 0.3)',
-        boxShadow: `0 0 20px rgba(147, 51, 234, 0.4), 0 0 40px rgba(59, 130, 246, 0.2)`,
-      }}
-    >
-      {/* Gradient background blob - offset to show white space at top */}
-      <div 
-        className="absolute"
-        style={{ 
-          background: `linear-gradient(135deg, hsl(220, 70%, 25%), hsl(270, 70%, 45%))`,
-          top: '15%',
-          left: '-10%',
-          right: '-10%',
-          bottom: '-10%',
-          borderRadius: '50%',
-        }}
-      />
-      {/* Soft inner glow for depth */}
-      <div 
-        className="absolute inset-0 opacity-60"
-        style={{ 
-          background: `radial-gradient(circle at 30% 30%, rgba(168, 85, 247, 0.6), transparent 60%)`,
-        }}
-      />
-      {/* Frosted glass overlay */}
-      <div 
-        className="absolute inset-0 backdrop-blur-sm"
-        style={{ 
-          background: `radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.05))`,
-        }}
-      />
-      {/* Pastel reflection highlight */}
-      <div 
-        className="absolute w-8 h-2 rounded-full opacity-40"
-        style={{ 
-          background: `linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.8), transparent)`,
-          top: '20%',
-          left: '15%',
-          transform: 'rotate(-20deg)',
-        }}
-      />
-      {/* Icon */}
-      <div className="relative z-10">
-        {children}
-      </div>
-    </div>
+const UsersBlobIcon = () => (
+  <div className="drop-shadow-xl">
+    <svg viewBox="0 0 80 80" className="w-20 h-20" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <radialGradient id="usersBlobGradient" cx="30%" cy="30%" r="70%">
+          <stop offset="0%" stopColor="rgba(255, 255, 255, 0.6)" />
+          <stop offset="50%" stopColor="rgba(255, 255, 255, 0.4)" />
+          <stop offset="100%" stopColor="rgba(255, 255, 255, 0.2)" />
+        </radialGradient>
+        <radialGradient id="usersBlobGradient2" cx="70%" cy="70%" r="60%">
+          <stop offset="0%" stopColor="hsl(160, 70%, 45%)" />
+          <stop offset="100%" stopColor="hsl(180, 60%, 35%)" />
+        </radialGradient>
+        <filter id="usersShadow" x="-50%" y="-50%" width="200%" height="200%">
+          <feDropShadow dx="0" dy="8" stdDeviation="12" floodColor="rgba(0, 0, 0, 0.1)" />
+        </filter>
+        <filter id="usersColoredShadow" x="-50%" y="-50%" width="200%" height="200%">
+          <feDropShadow dx="0" dy="4" stdDeviation="8" floodColor="rgba(16, 185, 129, 0.3)" />
+        </filter>
+        <filter id="usersGlassmorphic">
+          <feGaussianBlur stdDeviation="1" />
+        </filter>
+        <filter id="usersBackBlur">
+          <feGaussianBlur stdDeviation="2" />
+        </filter>
+      </defs>
+      <path d="M25 45 C25 30, 35 20, 50 22 C65 24, 75 35, 73 50 C71 65, 60 75, 45 73 C30 71, 25 60, 25 45 Z" fill="url(#usersBlobGradient2)" opacity="0.7" filter="url(#usersBackBlur)" />
+      <path d="M15 35 C15 20, 25 10, 40 12 C55 14, 70 25, 68 40 C66 55, 55 68, 40 66 C25 64, 15 50, 15 35 Z" fill="url(#usersBlobGradient)" stroke="rgba(255, 255, 255, 0.6)" strokeWidth="2" filter="url(#usersShadow) url(#usersGlassmorphic) url(#usersColoredShadow)" />
+      <g transform="translate(26, 26) scale(1.2)">
+        <circle cx="9" cy="5" r="3" fill="none" stroke="rgba(255, 255, 255, 0.95)" strokeWidth="1.5" />
+        <path d="M3 19v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2" fill="none" stroke="rgba(255, 255, 255, 0.95)" strokeWidth="1.5" />
+        <circle cx="17" cy="7" r="2.5" fill="none" stroke="rgba(255, 255, 255, 0.95)" strokeWidth="1.5" />
+        <path d="M21 19v-1.5a3 3 0 0 0-3-3h-1" fill="none" stroke="rgba(255, 255, 255, 0.95)" strokeWidth="1.5" />
+      </g>
+    </svg>
+  </div>
+);
+
+const ChartBlobIcon = () => (
+  <div className="drop-shadow-xl">
+    <svg viewBox="0 0 80 80" className="w-20 h-20" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <radialGradient id="chartBlobGradient" cx="30%" cy="30%" r="70%">
+          <stop offset="0%" stopColor="rgba(255, 255, 255, 0.6)" />
+          <stop offset="50%" stopColor="rgba(255, 255, 255, 0.4)" />
+          <stop offset="100%" stopColor="rgba(255, 255, 255, 0.2)" />
+        </radialGradient>
+        <radialGradient id="chartBlobGradient2" cx="70%" cy="70%" r="60%">
+          <stop offset="0%" stopColor="hsl(40, 90%, 55%)" />
+          <stop offset="100%" stopColor="hsl(25, 85%, 45%)" />
+        </radialGradient>
+        <filter id="chartShadow" x="-50%" y="-50%" width="200%" height="200%">
+          <feDropShadow dx="0" dy="8" stdDeviation="12" floodColor="rgba(0, 0, 0, 0.1)" />
+        </filter>
+        <filter id="chartColoredShadow" x="-50%" y="-50%" width="200%" height="200%">
+          <feDropShadow dx="0" dy="4" stdDeviation="8" floodColor="rgba(245, 158, 11, 0.3)" />
+        </filter>
+        <filter id="chartGlassmorphic">
+          <feGaussianBlur stdDeviation="1" />
+        </filter>
+        <filter id="chartBackBlur">
+          <feGaussianBlur stdDeviation="2" />
+        </filter>
+      </defs>
+      <path d="M25 45 C25 30, 35 20, 50 22 C65 24, 75 35, 73 50 C71 65, 60 75, 45 73 C30 71, 25 60, 25 45 Z" fill="url(#chartBlobGradient2)" opacity="0.7" filter="url(#chartBackBlur)" />
+      <path d="M15 35 C15 20, 25 10, 40 12 C55 14, 70 25, 68 40 C66 55, 55 68, 40 66 C25 64, 15 50, 15 35 Z" fill="url(#chartBlobGradient)" stroke="rgba(255, 255, 255, 0.6)" strokeWidth="2" filter="url(#chartShadow) url(#chartGlassmorphic) url(#chartColoredShadow)" />
+      <g transform="translate(26, 26) scale(1.2)">
+        <path d="M3 3v18h18" fill="none" stroke="rgba(255, 255, 255, 0.95)" strokeWidth="1.5" strokeLinecap="round" />
+        <path d="M7 16l4-4 4 4 5-6" fill="none" stroke="rgba(255, 255, 255, 0.95)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+      </g>
+    </svg>
   </div>
 );
 
@@ -80,9 +131,7 @@ const ServicesSection = ({ invertColors = false }: ServicesSectionProps) => {
         <ScrollAnimator animation="slide-in-up" delay={200}>
           <div className="bg-gray-50 border border-gray-200 p-6 rounded-lg h-full flex flex-col">
             <div className="mb-4 flex justify-center">
-              <GlassmorphicIcon gradientFrom="#8B5CF6" gradientTo="#A78BFA">
-                <Brain className="w-7 h-7 text-white" strokeWidth={1.5} />
-              </GlassmorphicIcon>
+              <BrainBlobIcon />
             </div>
             <div className="flex items-center justify-center mb-4">
               <h3 className="text-xl text-center font-semibold text-[#3F321F]">AI Solutions & Integration</h3>
@@ -103,9 +152,7 @@ const ServicesSection = ({ invertColors = false }: ServicesSectionProps) => {
         <ScrollAnimator animation="slide-in-up" delay={400}>
           <div className="bg-gray-50 border border-gray-200 p-6 rounded-lg h-full flex flex-col">
             <div className="mb-4 flex justify-center">
-              <GlassmorphicIcon gradientFrom="#10B981" gradientTo="#34D399">
-                <Users className="w-7 h-7 text-white" strokeWidth={1.5} />
-              </GlassmorphicIcon>
+              <UsersBlobIcon />
             </div>
             <div className="flex items-center justify-center mb-4">
               <h3 className="text-xl text-center font-semibold text-[#3F321F]">Consulting and Advisory</h3>
@@ -126,9 +173,7 @@ const ServicesSection = ({ invertColors = false }: ServicesSectionProps) => {
         <ScrollAnimator animation="slide-in-up" delay={600}>
           <div className="bg-gray-50 border border-gray-200 p-6 rounded-lg h-full flex flex-col">
             <div className="mb-4 flex justify-center">
-              <GlassmorphicIcon gradientFrom="#F59E0B" gradientTo="#FBBF24">
-                <BarChart3 className="w-7 h-7 text-white" strokeWidth={1.5} />
-              </GlassmorphicIcon>
+              <ChartBlobIcon />
             </div>
             <div className="flex items-center justify-center mb-4">
               <h3 className="text-xl text-center font-semibold text-[#3F321F]">Business Intelligence</h3>
