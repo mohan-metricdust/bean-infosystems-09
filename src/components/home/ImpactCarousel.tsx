@@ -9,8 +9,7 @@ import {
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
 import { cn } from '@/lib/utils';
 import { Separator } from '@/components/ui/separator';
-import { CheckCircle } from 'lucide-react';
-import { FaLaptopCode, FaHospital, FaUniversity, FaShoppingCart } from 'react-icons/fa';
+import { LaptopCodeBlobIcon, HospitalBlobIcon, UniversityBlobIcon, ShoppingCartBlobIcon } from '@/components/ui/BlobIcons';
 
 interface ImpactCardProps {
   businessType: string;
@@ -112,7 +111,7 @@ const ImpactCarousel = () => {
       author: "Sarah Chen",
       authorRole: "CTO, InnovateTech",
       authorImage: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=200&auto=format&fit=crop",
-      icon: <FaLaptopCode size={24} />,
+      icon: <LaptopCodeBlobIcon size="sm" />,
       cardImage: "/lovable-uploads/e6bfc380-d042-46a5-abbf-0993500366b3.png"
     },
     {
@@ -124,7 +123,7 @@ const ImpactCarousel = () => {
       author: "Dr. James Wilson",
       authorRole: "CISO, MediCare Systems",
       authorImage: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&auto=format&fit=crop",
-      icon: <FaHospital size={24} />,
+      icon: <HospitalBlobIcon size="sm" />,
       cardImage: "/lovable-uploads/561530f6-c1e5-4626-9a39-ea86d4a6a30e.png"
     },
     {
@@ -136,7 +135,7 @@ const ImpactCarousel = () => {
       author: "Michelle Rodriguez",
       authorRole: "COO, FinancePlus",
       authorImage: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=200&auto=format&fit=crop",
-      icon: <FaUniversity size={24} />,
+      icon: <UniversityBlobIcon size="sm" />,
       cardImage: "/lovable-uploads/2600ff82-e479-49ac-a114-f080789f6597.png"
     },
     {
@@ -148,7 +147,7 @@ const ImpactCarousel = () => {
       author: "Alex Thompson",
       authorRole: "Product Director, ShopEase",
       authorImage: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=200&auto=format&fit=crop",
-      icon: <FaShoppingCart size={24} />
+      icon: <ShoppingCartBlobIcon size="sm" />
     }
   ];
 

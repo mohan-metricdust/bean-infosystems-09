@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRightBlobIcon } from '@/components/ui/BlobIcons';
 import ScrollAnimator from '@/components/ui/ScrollAnimator';
 import PageSection from '@/components/layout/PageSection';
 import aboutImage from '@/assets/about-section-ai-solutions.jpg';
@@ -26,7 +26,7 @@ const AboutSection = ({ invertColors = false }: AboutSectionProps) => {
           <div className="flex justify-center mb-4">
             <Link to="/about" className={`${textColor} flex items-center font-medium hover:underline interactive`} style={{ color: '#333333' }}>
               Learn more about how we use AI to transform possibilities into reality
-              <ArrowRight size={16} className="ml-1" />
+              <ArrowRightBlobIcon size="sm" className="ml-1" />
             </Link>
           </div>
         </ScrollAnimator>
