@@ -15,14 +15,14 @@ const BrainBlobIcon = () => (
           <stop offset="100%" stopColor="rgba(255, 255, 255, 0.2)" />
         </radialGradient>
         <radialGradient id="brainBlobGradient2" cx="70%" cy="70%" r="60%">
-          <stop offset="0%" stopColor="hsl(270, 70%, 60%)" />
-          <stop offset="100%" stopColor="hsl(220, 70%, 45%)" />
+          <stop offset="0%" stopColor="#3F321F" />
+          <stop offset="100%" stopColor="#3F321F" />
         </radialGradient>
         <filter id="brainShadow" x="-50%" y="-50%" width="200%" height="200%">
           <feDropShadow dx="0" dy="8" stdDeviation="12" floodColor="rgba(0, 0, 0, 0.1)" />
         </filter>
         <filter id="brainColoredShadow" x="-50%" y="-50%" width="200%" height="200%">
-          <feDropShadow dx="0" dy="4" stdDeviation="8" floodColor="rgba(147, 51, 234, 0.3)" />
+          <feDropShadow dx="0" dy="4" stdDeviation="8" floodColor="rgba(63, 50, 31, 0.3)" />
         </filter>
         <filter id="brainGlassmorphic">
           <feGaussianBlur stdDeviation="1" />
@@ -52,14 +52,14 @@ const UsersBlobIcon = () => (
           <stop offset="100%" stopColor="rgba(255, 255, 255, 0.2)" />
         </radialGradient>
         <radialGradient id="usersBlobGradient2" cx="70%" cy="70%" r="60%">
-          <stop offset="0%" stopColor="hsl(160, 70%, 45%)" />
-          <stop offset="100%" stopColor="hsl(180, 60%, 35%)" />
+          <stop offset="0%" stopColor="#3F321F" />
+          <stop offset="100%" stopColor="#3F321F" />
         </radialGradient>
         <filter id="usersShadow" x="-50%" y="-50%" width="200%" height="200%">
           <feDropShadow dx="0" dy="8" stdDeviation="12" floodColor="rgba(0, 0, 0, 0.1)" />
         </filter>
         <filter id="usersColoredShadow" x="-50%" y="-50%" width="200%" height="200%">
-          <feDropShadow dx="0" dy="4" stdDeviation="8" floodColor="rgba(16, 185, 129, 0.3)" />
+          <feDropShadow dx="0" dy="4" stdDeviation="8" floodColor="rgba(63, 50, 31, 0.3)" />
         </filter>
         <filter id="usersGlassmorphic">
           <feGaussianBlur stdDeviation="1" />
@@ -90,14 +90,14 @@ const ChartBlobIcon = () => (
           <stop offset="100%" stopColor="rgba(255, 255, 255, 0.2)" />
         </radialGradient>
         <radialGradient id="chartBlobGradient2" cx="70%" cy="70%" r="60%">
-          <stop offset="0%" stopColor="hsl(40, 90%, 55%)" />
-          <stop offset="100%" stopColor="hsl(25, 85%, 45%)" />
+          <stop offset="0%" stopColor="#3F321F" />
+          <stop offset="100%" stopColor="#3F321F" />
         </radialGradient>
         <filter id="chartShadow" x="-50%" y="-50%" width="200%" height="200%">
           <feDropShadow dx="0" dy="8" stdDeviation="12" floodColor="rgba(0, 0, 0, 0.1)" />
         </filter>
         <filter id="chartColoredShadow" x="-50%" y="-50%" width="200%" height="200%">
-          <feDropShadow dx="0" dy="4" stdDeviation="8" floodColor="rgba(245, 158, 11, 0.3)" />
+          <feDropShadow dx="0" dy="4" stdDeviation="8" floodColor="rgba(63, 50, 31, 0.3)" />
         </filter>
         <filter id="chartGlassmorphic">
           <feGaussianBlur stdDeviation="1" />
