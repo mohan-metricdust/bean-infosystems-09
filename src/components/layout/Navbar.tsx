@@ -80,7 +80,7 @@ const Navbar = () => {
                 {navLinks.map((link) => 
                   link.children ? (
                     <div key={link.name} className="relative group">
-                      <div className="flex items-center">
+                      <div className="flex items-center gap-1">
                         <Link 
                           to={link.path}
                           className={`uppercase text-base tracking-wide transition-colors ${
@@ -91,7 +91,10 @@ const Navbar = () => {
                         >
                           {link.name}
                         </Link>
-                        
+                        <ChevronDown 
+                          size={16} 
+                          className="transition-transform duration-200 group-hover:rotate-180 text-black"
+                        />
                       </div>
                       <div className="absolute left-0 mt-2 w-56 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top-left z-50">
                         <div className="bg-white border border-gray-200 rounded-md shadow-lg overflow-hidden">
