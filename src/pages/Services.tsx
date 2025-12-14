@@ -202,7 +202,7 @@ const Services = () => {
                                     </Link>
                                 </div>
                                 <div className={`${index % 2 !== 0 ? 'md:order-1' : ''}`}>
-                                    <div className="aspect-square rounded-xl overflow-hidden shadow-lg">
+                                    <div className="aspect-video rounded-xl overflow-hidden shadow-lg">
                                         <img 
                                             src={service.image} 
                                             alt={service.title}
