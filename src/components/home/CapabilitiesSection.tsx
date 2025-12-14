@@ -205,7 +205,7 @@ const CapabilitiesSection = ({ invertColors = false }: CapabilitiesSectionProps)
                 className="pl-4 md:basis-1/3 lg:basis-1/4"
               >
                 <TiltCard className="h-full">
-                  <Card className="h-full p-6 flex flex-col items-center justify-center text-center cursor-grab active:cursor-grabbing bg-gray-50 border border-gray-200 text-gray-900">
+                  <Card className="h-full p-6 flex flex-col items-center justify-center text-center cursor-grab active:cursor-grabbing bg-white border border-gray-200 text-gray-900">
                     <div className="text-[#D4A76A] mb-4 transform transition-transform duration-300 group-hover:scale-125 relative">
                       <item.icon size={24} />
                     </div>

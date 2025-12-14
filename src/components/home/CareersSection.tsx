@@ -55,7 +55,7 @@ const CareersSection = ({ invertColors = false }: CareersSectionProps) => {
         {jobOpenings.map((job) => (
           <Card
             key={job.id}
-            className="p-6 bg-gray-200 backdrop-blur-sm border border-gray-300 text-gray-900 group hover:shadow-lg transition-all duration-300 hover:scale-105"
+            className="p-6 bg-white backdrop-blur-sm border border-gray-300 text-gray-900 group hover:shadow-lg transition-all duration-300 hover:scale-105"
           >
             <div className="space-y-4">
               <div className="flex items-start justify-between">
