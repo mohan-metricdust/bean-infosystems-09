@@ -106,7 +106,7 @@ const About = () => {
                 <img 
                   src={aboutMissionImage} 
                   alt="Our Mission - Team looking toward the future" 
-                  className="w-full h-full object-cover rounded-xl"
+                  className="w-full h-full object-contain rounded-xl"
                 />
               </div>
             </div>
