@@ -1,9 +1,9 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import ScrollAnimator from '@/components/ui/ScrollAnimator';
 import PageSection from '@/components/layout/PageSection';
+import aboutImage from '@/assets/about-section-image.jpg';
 
 interface AboutSectionProps {
   invertColors?: boolean;
@@ -37,8 +37,8 @@ const AboutSection = ({ invertColors = false }: AboutSectionProps) => {
               {/* Using the uploaded image without text overlay */}
               <div className="absolute inset-0 bg-gradient-to-br from-[#3F321F]/20 to-black/60 z-10 rounded-lg"></div>
               <img 
-                src="/lovable-uploads/6fd8e0e8-c475-451b-9d34-687fd32b515b.png" 
-                alt="Bean Infosystems" 
+                src={aboutImage} 
+                alt="AI-Powered Digital Transformation" 
                 className="w-full h-full object-cover rounded-lg"
               />
               {/* Removed the brand name overlay */}
