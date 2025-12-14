@@ -152,7 +152,7 @@ const Navbar = () => {
                       <span>{link.name}</span>
                       <ChevronDown 
                         size={18} 
-                        className={`transition-transform duration-200 ${
+                        className={`ml-auto text-gray-900 transition-transform duration-200 ${
                           activeDropdown === link.name ? 'rotate-180' : ''
                         }`} 
                       />
