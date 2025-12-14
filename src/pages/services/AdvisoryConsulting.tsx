@@ -5,6 +5,7 @@ import PageSection from '@/components/layout/PageSection';
 import { Link } from 'react-router-dom';
 import { Users, Target, Lightbulb, Shield, ArrowRight, TrendingUp, Award, CheckCircle } from 'lucide-react';
 import { Card } from '@/components/ui/card';
+import serviceAdvisoryConsulting from '@/assets/service-advisory-consulting.jpg';
 
 const AdvisoryConsulting = () => {
   const services = [
@@ -86,21 +87,11 @@ const AdvisoryConsulting = () => {
             </p>
           </div>
           <div className="relative">
-            <div className="aspect-video bg-bean/5 rounded-xl p-8 flex items-center justify-center">
-              <div className="relative w-full max-w-md">
-                <div className="absolute top-0 left-0 w-full h-full bg-card border border-border rounded-lg transform rotate-3 shadow-md"></div>
-                <div className="absolute top-0 left-0 w-full h-full bg-card border border-border rounded-lg transform -rotate-2 shadow-md"></div>
-                <div className="relative w-full h-full bg-card border border-border rounded-lg shadow-md p-6">
-                  <div className="text-bean mb-4">
-                    <Users size={32} />
-                  </div>
-                  <div className="h-4 w-3/4 bg-bean/20 rounded mb-3"></div>
-                  <div className="h-4 w-1/2 bg-bean/20 rounded mb-3"></div>
-                  <div className="h-4 w-2/3 bg-bean/20 rounded mb-3"></div>
-                  <div className="h-4 w-1/2 bg-bean/20 rounded"></div>
-                </div>
-              </div>
-            </div>
+            <img 
+              src={serviceAdvisoryConsulting} 
+              alt="Advisory & Consulting - Business professionals in strategic planning meeting" 
+              className="w-full h-auto rounded-xl shadow-lg object-cover aspect-video"
+            />
           </div>
         </div>
       </PageSection>
