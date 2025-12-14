@@ -118,7 +118,7 @@ const ImpactCarousel = () => {
       author: "Sarah Chen",
       authorRole: "CTO, InnovateTech",
       authorImage: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=200&auto=format&fit=crop",
-      icon: <LaptopCodeBlobIcon size="sm" />,
+      icon: <LaptopCodeBlobIcon size="lg" />,
       cardImage: "/lovable-uploads/e6bfc380-d042-46a5-abbf-0993500366b3.png"
     },
     {
@@ -130,7 +130,7 @@ const ImpactCarousel = () => {
       author: "Dr. James Wilson",
       authorRole: "CISO, MediCare Systems",
       authorImage: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&auto=format&fit=crop",
-      icon: <HospitalBlobIcon size="sm" />,
+      icon: <HospitalBlobIcon size="lg" />,
       cardImage: "/lovable-uploads/561530f6-c1e5-4626-9a39-ea86d4a6a30e.png"
     },
     {
@@ -142,7 +142,7 @@ const ImpactCarousel = () => {
       author: "Michelle Rodriguez",
       authorRole: "COO, FinancePlus",
       authorImage: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=200&auto=format&fit=crop",
-      icon: <UniversityBlobIcon size="sm" />,
+      icon: <UniversityBlobIcon size="lg" />,
       cardImage: "/lovable-uploads/2600ff82-e479-49ac-a114-f080789f6597.png"
     },
     {
@@ -154,7 +154,7 @@ const ImpactCarousel = () => {
       author: "Alex Thompson",
       authorRole: "Product Director, ShopEase",
       authorImage: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=200&auto=format&fit=crop",
-      icon: <ShoppingCartBlobIcon size="sm" />
+      icon: <ShoppingCartBlobIcon size="lg" />
     }
   ];
 
