@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRightBlobIcon } from '@/components/ui/BlobIcons';
 import { Link } from 'react-router-dom';
 import MagneticButton from '@/components/ui/MagneticButton';
 import ScrollAnimator from '@/components/ui/ScrollAnimator';
@@ -39,7 +39,7 @@ const HeroContent: React.FC<HeroContentProps> = ({ isLoaded }) => {
             <MagneticButton className="px-6 py-3 bg-[#3F321F] rounded-full transition-all duration-300 hover:bg-[#2D2417] group">
               <Link to="/about" className="flex items-center text-white font-medium">
                 Learn More
-                <ArrowRight size={18} className="ml-2 group-hover:translate-x-1 transition-transform" />
+                <ArrowRightBlobIcon size="sm" className="ml-2 group-hover:translate-x-1 transition-transform" />
               </Link>
             </MagneticButton>
           </div>

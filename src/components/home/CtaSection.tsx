@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRightBlobIcon } from '@/components/ui/BlobIcons';
 import ScrollAnimator from '@/components/ui/ScrollAnimator';
 import MagneticButton from '@/components/ui/MagneticButton';
 import ParallaxSection from '@/components/ui/ParallaxSection';
@@ -29,7 +29,7 @@ const CtaSection = ({ invertColors = false }: CtaSectionProps) => {
           <MagneticButton strength={20} className="btn-primary inline-flex">
             <Link to="/contact" className="flex items-center">
               Get in Touch
-              <ArrowRight size={18} className="ml-2" />
+              <ArrowRightBlobIcon size="sm" className="ml-2" />
             </Link>
           </MagneticButton>
         </ScrollAnimator>

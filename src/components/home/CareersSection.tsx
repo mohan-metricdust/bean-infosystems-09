@@ -1,10 +1,8 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, UserRound, User, UserCheck, UserPlus } from 'lucide-react';
 import { Card } from '@/components/ui/card';
-import Building from '@/components/ui/Building';
-import MapPin from '@/components/ui/MapPin';
+import { ArrowRightBlobIcon, UserBlobIcon, UserRoundBlobIcon, UserCheckBlobIcon, UserPlusBlobIcon, BuildingBlobIcon, MapPinBlobIcon } from '@/components/ui/BlobIcons';
 import PageSection from '@/components/layout/PageSection';
 
 interface CareersSectionProps {
@@ -19,7 +17,7 @@ const CareersSection = ({ invertColors = false }: CareersSectionProps) => {
       type: "Full-time",
       department: "Engineering",
       id: "job-1",
-      icon: <User className="text-black" size={20} />
+      icon: <UserBlobIcon size="sm" />
     },
     {
       title: "UX/UI Designer",
@@ -27,7 +25,7 @@ const CareersSection = ({ invertColors = false }: CareersSectionProps) => {
       type: "Full-time",
       department: "Design",
       id: "job-2",
-      icon: <UserRound className="text-[#3F321F]" size={20} />
+      icon: <UserRoundBlobIcon size="sm" />
     },
     {
       title: "Product Manager",
@@ -35,7 +33,7 @@ const CareersSection = ({ invertColors = false }: CareersSectionProps) => {
       type: "Full-time",
       department: "Product",
       id: "job-3",
-      icon: <UserCheck className="text-[#3F321F]" size={20} />
+      icon: <UserCheckBlobIcon size="sm" />
     },
     {
       title: "DevOps Engineer",
@@ -43,7 +41,7 @@ const CareersSection = ({ invertColors = false }: CareersSectionProps) => {
       type: "Full-time",
       department: "Operations",
       id: "job-4",
-      icon: <UserPlus className="text-[#3F321F]" size={20} />
+      icon: <UserPlusBlobIcon size="sm" />
     }
   ];
 
@@ -69,15 +67,15 @@ const CareersSection = ({ invertColors = false }: CareersSectionProps) => {
                 </span>
               </div>
               
-              <div>
+                <div>
                 <h3 className="text-lg font-semibold mb-2 text-[#3F321F]">{job.title}</h3>
                 <div className="space-y-2">
-                  <div className="flex justify-center text-sm text-gray-700">
-                    <Building className="w-4 h-4 mr-2 text-black" />
+                  <div className="flex justify-center items-center text-sm text-gray-700">
+                    <BuildingBlobIcon size="sm" className="mr-2" />
                     {job.department}
                   </div>
-                  <div className="flex justify-center text-sm text-gray-700">
-                    <MapPin className="w-4 h-4 mr-2 text-black" />
+                  <div className="flex justify-center items-center text-sm text-gray-700">
+                    <MapPinBlobIcon size="sm" className="mr-2" />
                     {job.location}
                   </div>
                 </div>
@@ -88,7 +86,7 @@ const CareersSection = ({ invertColors = false }: CareersSectionProps) => {
                 className="inline-flex items-center text-sm font-medium text-[#3F321F] opacity-50 group-hover:opacity-100 transition-all duration-300"
               >
                 View Position
-                <ArrowRight size={16} color='black' className="ml-1 group-hover:translate-x-1 transition-transform duration-300" />
+                <ArrowRightBlobIcon size="sm" className="ml-1 group-hover:translate-x-1 transition-transform duration-300" />
               </Link>
             </div>
           </Card>
@@ -101,7 +99,7 @@ const CareersSection = ({ invertColors = false }: CareersSectionProps) => {
           className="inline-flex items-center justify-center px-6 py-3 bg-[#3F321F] text-white font-medium rounded-md hover:bg-[#2D2417] transition-colors hover:scale-105 transition-transform duration-300"
         >
           View All Positions
-          <ArrowRight size={18} className="ml-2 group-hover:translate-x-1 transition-transform duration-300" />
+          <ArrowRightBlobIcon size="sm" className="ml-2 group-hover:translate-x-1 transition-transform duration-300" />
         </Link>
       </div>
     </PageSection>

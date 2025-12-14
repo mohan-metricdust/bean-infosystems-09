@@ -793,3 +793,151 @@ export const Building2BlobIcon = ({ size = 'lg', className }: BlobIconProps) => 
     }
   />
 );
+
+// ArrowRight Icon
+export const ArrowRightBlobIcon = ({ size = 'lg', className }: BlobIconProps) => (
+  <BlobSVG
+    config={createBrownBlob('arrowRight')}
+    size={sizeMap[size]}
+    className={className}
+    iconPath={
+      <g transform="translate(26, 26) scale(1.2)">
+        <line x1="5" y1="12" x2="19" y2="12" stroke="rgba(255, 255, 255, 0.95)" strokeWidth="1.5" strokeLinecap="round" />
+        <polyline points="12 5 19 12 12 19" fill="none" stroke="rgba(255, 255, 255, 0.95)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+      </g>
+    }
+  />
+);
+
+// User Icon
+export const UserBlobIcon = ({ size = 'lg', className }: BlobIconProps) => (
+  <BlobSVG
+    config={createBrownBlob('user')}
+    size={sizeMap[size]}
+    className={className}
+    iconPath={
+      <g transform="translate(26, 26) scale(1.2)">
+        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" fill="none" stroke="rgba(255, 255, 255, 0.95)" strokeWidth="1.5" />
+        <circle cx="12" cy="7" r="4" fill="none" stroke="rgba(255, 255, 255, 0.95)" strokeWidth="1.5" />
+      </g>
+    }
+  />
+);
+
+// UserRound Icon
+export const UserRoundBlobIcon = ({ size = 'lg', className }: BlobIconProps) => (
+  <BlobSVG
+    config={createBrownBlob('userRound')}
+    size={sizeMap[size]}
+    className={className}
+    iconPath={
+      <g transform="translate(26, 26) scale(1.2)">
+        <circle cx="12" cy="8" r="5" fill="none" stroke="rgba(255, 255, 255, 0.95)" strokeWidth="1.5" />
+        <path d="M20 21a8 8 0 1 0-16 0" fill="none" stroke="rgba(255, 255, 255, 0.95)" strokeWidth="1.5" />
+      </g>
+    }
+  />
+);
+
+// UserCheck Icon
+export const UserCheckBlobIcon = ({ size = 'lg', className }: BlobIconProps) => (
+  <BlobSVG
+    config={createBrownBlob('userCheck')}
+    size={sizeMap[size]}
+    className={className}
+    iconPath={
+      <g transform="translate(26, 26) scale(1.2)">
+        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" fill="none" stroke="rgba(255, 255, 255, 0.95)" strokeWidth="1.5" />
+        <circle cx="9" cy="7" r="4" fill="none" stroke="rgba(255, 255, 255, 0.95)" strokeWidth="1.5" />
+        <polyline points="16 11 18 13 22 9" fill="none" stroke="rgba(255, 255, 255, 0.95)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+      </g>
+    }
+  />
+);
+
+// UserPlus Icon
+export const UserPlusBlobIcon = ({ size = 'lg', className }: BlobIconProps) => (
+  <BlobSVG
+    config={createBrownBlob('userPlus')}
+    size={sizeMap[size]}
+    className={className}
+    iconPath={
+      <g transform="translate(26, 26) scale(1.2)">
+        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" fill="none" stroke="rgba(255, 255, 255, 0.95)" strokeWidth="1.5" />
+        <circle cx="9" cy="7" r="4" fill="none" stroke="rgba(255, 255, 255, 0.95)" strokeWidth="1.5" />
+        <line x1="19" y1="8" x2="19" y2="14" stroke="rgba(255, 255, 255, 0.95)" strokeWidth="1.5" strokeLinecap="round" />
+        <line x1="22" y1="11" x2="16" y2="11" stroke="rgba(255, 255, 255, 0.95)" strokeWidth="1.5" strokeLinecap="round" />
+      </g>
+    }
+  />
+);
+
+// LaptopCode Icon (for Tech Startup)
+export const LaptopCodeBlobIcon = ({ size = 'lg', className }: BlobIconProps) => (
+  <BlobSVG
+    config={createBrownBlob('laptopCode')}
+    size={sizeMap[size]}
+    className={className}
+    iconPath={
+      <g transform="translate(26, 26) scale(1.2)">
+        <rect x="3" y="4" width="18" height="12" rx="2" ry="2" fill="none" stroke="rgba(255, 255, 255, 0.95)" strokeWidth="1.5" />
+        <line x1="2" y1="20" x2="22" y2="20" stroke="rgba(255, 255, 255, 0.95)" strokeWidth="1.5" strokeLinecap="round" />
+        <polyline points="8 9 6 11 8 13" fill="none" stroke="rgba(255, 255, 255, 0.95)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+        <polyline points="16 9 18 11 16 13" fill="none" stroke="rgba(255, 255, 255, 0.95)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+      </g>
+    }
+  />
+);
+
+// Hospital Icon (for Healthcare)
+export const HospitalBlobIcon = ({ size = 'lg', className }: BlobIconProps) => (
+  <BlobSVG
+    config={createBrownBlob('hospital')}
+    size={sizeMap[size]}
+    className={className}
+    iconPath={
+      <g transform="translate(26, 24) scale(1.2)">
+        <path d="M12 2v4" stroke="rgba(255, 255, 255, 0.95)" strokeWidth="1.5" strokeLinecap="round" />
+        <path d="M12 12v10" stroke="rgba(255, 255, 255, 0.95)" strokeWidth="1.5" strokeLinecap="round" />
+        <path d="M4 6h16v16H4z" fill="none" stroke="rgba(255, 255, 255, 0.95)" strokeWidth="1.5" />
+        <path d="M9 10h6" stroke="rgba(255, 255, 255, 0.95)" strokeWidth="1.5" strokeLinecap="round" />
+        <path d="M12 7v6" stroke="rgba(255, 255, 255, 0.95)" strokeWidth="1.5" strokeLinecap="round" />
+      </g>
+    }
+  />
+);
+
+// University Icon (for Financial Services)
+export const UniversityBlobIcon = ({ size = 'lg', className }: BlobIconProps) => (
+  <BlobSVG
+    config={createBrownBlob('university')}
+    size={sizeMap[size]}
+    className={className}
+    iconPath={
+      <g transform="translate(26, 26) scale(1.1)">
+        <path d="M22 10v12H2V10l10-8 10 8z" fill="none" stroke="rgba(255, 255, 255, 0.95)" strokeWidth="1.5" />
+        <path d="M6 10v12" stroke="rgba(255, 255, 255, 0.95)" strokeWidth="1.5" />
+        <path d="M10 10v12" stroke="rgba(255, 255, 255, 0.95)" strokeWidth="1.5" />
+        <path d="M14 10v12" stroke="rgba(255, 255, 255, 0.95)" strokeWidth="1.5" />
+        <path d="M18 10v12" stroke="rgba(255, 255, 255, 0.95)" strokeWidth="1.5" />
+        <path d="M2 22h20" stroke="rgba(255, 255, 255, 0.95)" strokeWidth="1.5" strokeLinecap="round" />
+      </g>
+    }
+  />
+);
+
+// ShoppingCart Icon (for E-Commerce)
+export const ShoppingCartBlobIcon = ({ size = 'lg', className }: BlobIconProps) => (
+  <BlobSVG
+    config={createBrownBlob('shoppingCart')}
+    size={sizeMap[size]}
+    className={className}
+    iconPath={
+      <g transform="translate(26, 26) scale(1.2)">
+        <circle cx="9" cy="21" r="1" fill="none" stroke="rgba(255, 255, 255, 0.95)" strokeWidth="1.5" />
+        <circle cx="20" cy="21" r="1" fill="none" stroke="rgba(255, 255, 255, 0.95)" strokeWidth="1.5" />
+        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" fill="none" stroke="rgba(255, 255, 255, 0.95)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+      </g>
+    }
+  />
+);
