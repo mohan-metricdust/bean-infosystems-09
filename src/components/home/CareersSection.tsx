@@ -83,7 +83,7 @@ const CareersSection = ({ invertColors = false }: CareersSectionProps) => {
 
               <Link 
                 to={`/careers/${job.id}`} 
-                className="inline-flex items-center text-sm font-medium text-[#3F321F] opacity-50 group-hover:opacity-100 transition-all duration-300"
+                className="inline-flex items-center text-sm font-medium text-white bg-[#3F321F] px-4 py-2 rounded-md hover:bg-[#2D2417] transition-all duration-300"
               >
                 View Position
                 <ArrowRightBlobIcon size="sm" className="ml-1 group-hover:translate-x-1 transition-transform duration-300" />
