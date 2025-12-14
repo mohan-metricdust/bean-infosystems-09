@@ -102,13 +102,11 @@ const About = () => {
           </div>
           <div className="relative">
             <div className="rounded-xl overflow-hidden shadow-xl">
-              <div className="aspect-square">
-                <img 
-                  src={aboutMissionImage} 
-                  alt="Our Mission - Team looking toward the future" 
-                  className="w-full h-full object-contain rounded-xl"
-                />
-              </div>
+              <img 
+                src={aboutMissionImage} 
+                alt="Our Mission - Team looking toward the future" 
+                className="w-full h-[400px] object-contain rounded-xl"
+              />
             </div>
             <div className="absolute -z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full max-w-[120%] max-h-[120%] bg-bean/5 rounded-full blur-3xl"></div>
           </div>
