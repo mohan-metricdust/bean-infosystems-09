@@ -42,7 +42,12 @@ const ImpactCard: React.FC<ImpactCardProps> = ({
         <div className="flex flex-col items-center mb-2">
           <div className="text-lg font-semibold text-[#3F321F] text-center">{businessType}</div>
         </div>
-        {cardImage && (
+        {icon && (
+          <div className="mb-4 flex justify-center">
+            {icon}
+          </div>
+        )}
+        {!icon && cardImage && (
           <div className="mb-4 flex justify-center">
             <img 
               src={cardImage} 
