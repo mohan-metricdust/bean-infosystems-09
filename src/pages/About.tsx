@@ -18,7 +18,7 @@ import {
   ZapBlobIcon,
   BookOpenBlobIcon
 } from '@/components/ui/BlobIcons';
-import aboutMissionImage from '@/assets/about-vision-mission.jpg';
+import aboutMissionImage from '@/assets/about-mission-image.webp';
 
 const About = () => {
   const timeline = [
