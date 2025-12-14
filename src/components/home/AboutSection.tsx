@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import ScrollAnimator from '@/components/ui/ScrollAnimator';
 import PageSection from '@/components/layout/PageSection';
-import aboutImage from '@/assets/about-section-realistic.jpg';
+import aboutImage from '@/assets/about-section-ai-solutions.jpg';
 
 interface AboutSectionProps {
   invertColors?: boolean;
