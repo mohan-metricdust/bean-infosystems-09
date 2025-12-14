@@ -129,7 +129,9 @@ const ServicesSection = ({ invertColors = false }: ServicesSectionProps) => {
     >
       <div className="grid md:grid-cols-3 gap-6">
         <ScrollAnimator animation="slide-in-up" delay={200}>
-          <div className="bg-gray-50 border border-gray-200 p-6 rounded-lg h-full flex flex-col">
+          <div className="bg-gray-50 border border-gray-200 p-6 rounded-lg h-full flex flex-col shadow-xl hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 ease-out"
+            style={{ animation: 'float 6s ease-in-out infinite' }}
+          >
             <div className="mb-4 flex justify-center">
               <BrainBlobIcon />
             </div>
@@ -150,7 +152,9 @@ const ServicesSection = ({ invertColors = false }: ServicesSectionProps) => {
         </ScrollAnimator>
         
         <ScrollAnimator animation="slide-in-up" delay={400}>
-          <div className="bg-gray-50 border border-gray-200 p-6 rounded-lg h-full flex flex-col">
+          <div className="bg-gray-50 border border-gray-200 p-6 rounded-lg h-full flex flex-col shadow-xl hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 ease-out"
+            style={{ animation: 'float 6s ease-in-out infinite 0.5s' }}
+          >
             <div className="mb-4 flex justify-center">
               <UsersBlobIcon />
             </div>
@@ -171,7 +175,9 @@ const ServicesSection = ({ invertColors = false }: ServicesSectionProps) => {
         </ScrollAnimator>
         
         <ScrollAnimator animation="slide-in-up" delay={600}>
-          <div className="bg-gray-50 border border-gray-200 p-6 rounded-lg h-full flex flex-col">
+          <div className="bg-gray-50 border border-gray-200 p-6 rounded-lg h-full flex flex-col shadow-xl hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 ease-out"
+            style={{ animation: 'float 6s ease-in-out infinite 1s' }}
+          >
             <div className="mb-4 flex justify-center">
               <ChartBlobIcon />
             </div>

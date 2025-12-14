@@ -37,7 +37,9 @@ const ImpactCard: React.FC<ImpactCardProps> = ({
   cardImage
 }) => {
   return (
-    <Card className="bg-gray-50 border border-gray-200 shadow-lg h-full">
+    <Card className="bg-gray-50 border border-gray-200 shadow-xl hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 ease-out h-full"
+      style={{ animation: 'float 6s ease-in-out infinite' }}
+    >
       <CardHeader>
         <div className="flex flex-col items-center mb-2">
           <div className="text-lg font-semibold text-[#3F321F] text-center">{businessType}</div>
