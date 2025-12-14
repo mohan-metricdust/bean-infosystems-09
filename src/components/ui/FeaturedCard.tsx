@@ -39,7 +39,7 @@ const FeaturedCard: React.FC<FeaturedCardProps> = ({
   return (
     <div 
       className={cn(
-        'elegant-card p-6 bg-gray-200 group hover:shadow-lg transition-all duration-300 hover:scale-105 cursor-pointer',
+        'elegant-card p-6 bg-white group hover:shadow-lg transition-all duration-300 hover:scale-105 cursor-pointer',
         className
       )}
     >

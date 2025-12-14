@@ -17,7 +17,7 @@ const AiServicesSection = ({ invertColors = false }: AiServicesSectionProps) => 
     >
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         <ScrollAnimator animation="slide-in-up" delay={100}>
-          <div className="bg-gray-50 border border-gray-200 p-6 rounded-lg h-full group hover:scale-105 transition-all duration-300 relative">
+          <div className="bg-white border border-gray-200 p-6 rounded-lg h-full group hover:scale-105 transition-all duration-300 relative">
             <div className="text-[#D4A76A] mb-4">
               <Database size={36} />
             </div>
@@ -36,7 +36,7 @@ const AiServicesSection = ({ invertColors = false }: AiServicesSectionProps) => 
         </ScrollAnimator>
         
         <ScrollAnimator animation="slide-in-up" delay={200}>
-          <div className="bg-gray-50 border border-gray-200 p-6 rounded-lg h-full group hover:scale-105 transition-all duration-300 relative">
+          <div className="bg-white border border-gray-200 p-6 rounded-lg h-full group hover:scale-105 transition-all duration-300 relative">
             <div className="text-[#D4A76A] mb-4">
               <Activity size={36} />
             </div>
@@ -55,7 +55,7 @@ const AiServicesSection = ({ invertColors = false }: AiServicesSectionProps) => 
         </ScrollAnimator>
         
         <ScrollAnimator animation="slide-in-up" delay={300}>
-          <div className="bg-gray-50 border border-gray-200 p-6 rounded-lg h-full group hover:scale-105 transition-all duration-300 relative">
+          <div className="bg-white border border-gray-200 p-6 rounded-lg h-full group hover:scale-105 transition-all duration-300 relative">
             <div className="text-[#D4A76A] mb-4">
               <Activity size={36} />
             </div>
@@ -74,7 +74,7 @@ const AiServicesSection = ({ invertColors = false }: AiServicesSectionProps) => 
         </ScrollAnimator>
         
         <ScrollAnimator animation="slide-in-up" delay={400}>
-          <div className="bg-gray-50 border border-gray-200 p-6 rounded-lg h-full group hover:scale-105 transition-all duration-300 relative">
+          <div className="bg-white border border-gray-200 p-6 rounded-lg h-full group hover:scale-105 transition-all duration-300 relative">
             <div className="text-[#D4A76A] mb-4">
               <BarChart2 size={36} />
             </div>
@@ -93,7 +93,7 @@ const AiServicesSection = ({ invertColors = false }: AiServicesSectionProps) => 
         </ScrollAnimator>
         
         <ScrollAnimator animation="slide-in-up" delay={500}>
-          <div className="bg-gray-50 border border-gray-200 p-6 rounded-lg h-full group hover:scale-105 transition-all duration-300 relative">
+          <div className="bg-white border border-gray-200 p-6 rounded-lg h-full group hover:scale-105 transition-all duration-300 relative">
             <div className="text-[#D4A76A] mb-4">
               <Database size={36} />
             </div>
