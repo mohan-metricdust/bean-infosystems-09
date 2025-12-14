@@ -28,7 +28,7 @@ const SocialImpact = () => {
 
       <PageSection>
         <div className="max-w-5xl mx-auto space-y-8">
-          <h2 className="text-2xl md:text-3xl font-bold text-[#2286CF]">
+          <h2 className="text-2xl md:text-3xl font-bold text-[#3F321F]">
             Social Impact Through Technology: Empowering Social Enterprises and NGOs
           </h2>
           <div className="space-y-6 text-gray-800 text-lg leading-relaxed">
