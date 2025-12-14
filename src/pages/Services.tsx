@@ -17,6 +17,9 @@ import {
   ThumbsUpBlobIcon,
   StarBlobIcon
 } from '@/components/ui/BlobIcons';
+import appDevImage from '@/assets/service-application-development.jpg';
+import consultingImage from '@/assets/service-consulting.jpg';
+import advisoryImage from '@/assets/service-advisory.jpg';
 
 const Services = () => {
     const services = [
@@ -25,6 +28,7 @@ const Services = () => {
             description: "Custom software applications designed to meet your unique business requirements and drive digital transformation.",
             icon: <CodeBlobIcon size="md" />,
             link: "/services/application-development",
+            image: appDevImage,
             benefits: [
                 "Tailored solutions that perfectly match your needs",
                 "Scalable architecture to grow with your business",
@@ -37,6 +41,7 @@ const Services = () => {
             description: "Strategic guidance from industry experts to optimize your technology investments and improve business processes.",
             icon: <UsersBlobIcon size="md" />,
             link: "/services/consulting-services",
+            image: consultingImage,
             benefits: [
                 "Expert analysis of your current technology landscape",
                 "Strategic roadmaps for digital transformation",
@@ -49,6 +54,7 @@ const Services = () => {
             description: "Insights and recommendations to help you navigate digital trends and make informed business decisions.",
             icon: <BarChartBlobIcon size="md" />,
             link: "/services/advisory-services",
+            image: advisoryImage,
             benefits: [
                 "Industry trend analysis and insights",
                 "Competitive landscape evaluation",
@@ -196,22 +202,12 @@ const Services = () => {
                                     </Link>
                                 </div>
                                 <div className={`${index % 2 !== 0 ? 'md:order-1' : ''}`}>
-                                    <div className="aspect-square bg-gradient-to-br from-bean/20 to-transparent rounded-xl p-8 flex items-center justify-center">
-                                        <div className="w-full max-w-xs aspect-square relative">
-                                            <div className="absolute inset-0 flex items-center justify-center">
-                                                <div className="opacity-30 scale-[3]">
-                                                    {service.icon}
-                                                </div>
-                                            </div>
-                                            <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-transparent to-background/80 rounded-xl">
-                                                <div className="text-center p-6">
-                                                    <h4 className="text-xl font-bold mb-2">{service.title}</h4>
-                                                    <p className="text-foreground/70 text-sm">
-                                                        Tailored solutions for your unique business needs
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
+                                    <div className="aspect-square rounded-xl overflow-hidden shadow-lg">
+                                        <img 
+                                            src={service.image} 
+                                            alt={service.title}
+                                            className="w-full h-full object-cover"
+                                        />
                                     </div>
                                 </div>
                             </div>
