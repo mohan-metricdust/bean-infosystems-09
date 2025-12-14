@@ -146,7 +146,7 @@ const Navbar = () => {
                 link.children ? (
                   <div key={link.name} className="border-b border-gray-100 last:border-b-0">
                     <button 
-                      className="flex items-center justify-between w-full px-4 py-3 text-gray-900 uppercase text-sm font-medium"
+                      className="flex items-center w-full px-4 py-3 text-gray-900 uppercase text-sm font-medium gap-2"
                       onClick={() => toggleDropdown(link.name)}
                     >
                       <span>{link.name}</span>
