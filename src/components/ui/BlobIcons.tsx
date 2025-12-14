@@ -12,96 +12,27 @@ const sizeMap = {
   xl: 'w-24 h-24'
 };
 
-// Purple gradient (AI, Brain, Lightbulb, Zap)
-const createPurpleBlob = (id: string) => ({
+// Single brown color for all blob icons (#3F321F = hsl(35, 35%, 18%))
+const createBrownBlob = (id: string) => ({
   gradient1: `${id}BlobGradient`,
   gradient2: `${id}BlobGradient2`,
   shadow: `${id}Shadow`,
   coloredShadow: `${id}ColoredShadow`,
   glassmorphic: `${id}Glassmorphic`,
   backBlur: `${id}BackBlur`,
-  color1: 'hsl(270, 70%, 60%)',
-  color2: 'hsl(220, 70%, 45%)',
-  shadowColor: 'rgba(147, 51, 234, 0.3)'
+  color1: '#3F321F',
+  color2: '#3F321F',
+  shadowColor: 'rgba(63, 50, 31, 0.3)'
 });
 
-// Teal gradient (Users, Team, Consulting)
-const createTealBlob = (id: string) => ({
-  gradient1: `${id}BlobGradient`,
-  gradient2: `${id}BlobGradient2`,
-  shadow: `${id}Shadow`,
-  coloredShadow: `${id}ColoredShadow`,
-  glassmorphic: `${id}Glassmorphic`,
-  backBlur: `${id}BackBlur`,
-  color1: 'hsl(160, 70%, 45%)',
-  color2: 'hsl(180, 60%, 35%)',
-  shadowColor: 'rgba(16, 185, 129, 0.3)'
-});
-
-// Orange gradient (Chart, BI, Analytics)
-const createOrangeBlob = (id: string) => ({
-  gradient1: `${id}BlobGradient`,
-  gradient2: `${id}BlobGradient2`,
-  shadow: `${id}Shadow`,
-  coloredShadow: `${id}ColoredShadow`,
-  glassmorphic: `${id}Glassmorphic`,
-  backBlur: `${id}BackBlur`,
-  color1: 'hsl(40, 90%, 55%)',
-  color2: 'hsl(25, 85%, 45%)',
-  shadowColor: 'rgba(245, 158, 11, 0.3)'
-});
-
-// Blue gradient (Code, Tech, Development)
-const createBlueBlob = (id: string) => ({
-  gradient1: `${id}BlobGradient`,
-  gradient2: `${id}BlobGradient2`,
-  shadow: `${id}Shadow`,
-  coloredShadow: `${id}ColoredShadow`,
-  glassmorphic: `${id}Glassmorphic`,
-  backBlur: `${id}BackBlur`,
-  color1: 'hsl(217, 91%, 60%)',
-  color2: 'hsl(217, 91%, 45%)',
-  shadowColor: 'rgba(59, 130, 246, 0.3)'
-});
-
-// Red/Pink gradient (Heart, Care)
-const createRedBlob = (id: string) => ({
-  gradient1: `${id}BlobGradient`,
-  gradient2: `${id}BlobGradient2`,
-  shadow: `${id}Shadow`,
-  coloredShadow: `${id}ColoredShadow`,
-  glassmorphic: `${id}Glassmorphic`,
-  backBlur: `${id}BackBlur`,
-  color1: 'hsl(350, 70%, 55%)',
-  color2: 'hsl(340, 65%, 45%)',
-  shadowColor: 'rgba(239, 68, 68, 0.3)'
-});
-
-// Green gradient (Growth, Target)
-const createGreenBlob = (id: string) => ({
-  gradient1: `${id}BlobGradient`,
-  gradient2: `${id}BlobGradient2`,
-  shadow: `${id}Shadow`,
-  coloredShadow: `${id}ColoredShadow`,
-  glassmorphic: `${id}Glassmorphic`,
-  backBlur: `${id}BackBlur`,
-  color1: 'hsl(142, 70%, 45%)',
-  color2: 'hsl(142, 60%, 35%)',
-  shadowColor: 'rgba(34, 197, 94, 0.3)'
-});
-
-// Gold gradient (Award, Star)
-const createGoldBlob = (id: string) => ({
-  gradient1: `${id}BlobGradient`,
-  gradient2: `${id}BlobGradient2`,
-  shadow: `${id}Shadow`,
-  coloredShadow: `${id}ColoredShadow`,
-  glassmorphic: `${id}Glassmorphic`,
-  backBlur: `${id}BackBlur`,
-  color1: 'hsl(45, 90%, 55%)',
-  color2: 'hsl(35, 85%, 45%)',
-  shadowColor: 'rgba(234, 179, 8, 0.3)'
-});
+// Keep legacy function names pointing to brown blob for compatibility
+const createPurpleBlob = createBrownBlob;
+const createTealBlob = createBrownBlob;
+const createOrangeBlob = createBrownBlob;
+const createBlueBlob = createBrownBlob;
+const createRedBlob = createBrownBlob;
+const createGreenBlob = createBrownBlob;
+const createGoldBlob = createBrownBlob;
 
 interface BlobSVGProps {
   config: ReturnType<typeof createPurpleBlob>;
