@@ -3,41 +3,51 @@ import React from 'react';
 import PageHero from '@/components/layout/PageHero';
 import PageSection from '@/components/layout/PageSection';
 import { Link } from 'react-router-dom';
-import { BarChart, PieChart, TrendingUp, Database, Eye, ArrowRight, Target, Zap, Shield } from 'lucide-react';
 import { Card } from '@/components/ui/card';
 import serviceBusinessIntelligence from '@/assets/service-business-intelligence.jpg';
+import {
+  BarChartBlobIcon,
+  PieChartBlobIcon,
+  TrendingUpBlobIcon,
+  DatabaseBlobIcon,
+  EyeBlobIcon,
+  ArrowRightBlobIcon,
+  TargetBlobIcon,
+  ZapBlobIcon,
+  ShieldBlobIcon
+} from '@/components/ui/BlobIcons';
 
 const BusinessIntelligence = () => {
   const solutions = [
     {
       title: "Data Visualization",
       description: "Transform complex data into clear, interactive dashboards and reports that drive informed decision-making.",
-      icon: <BarChart size={36} />
+      icon: <BarChartBlobIcon size="sm" />
     },
     {
       title: "Advanced Analytics",
       description: "Leverage statistical analysis and machine learning to uncover hidden patterns and insights in your data.",
-      icon: <TrendingUp size={36} />
+      icon: <TrendingUpBlobIcon size="sm" />
     },
     {
       title: "Data Warehousing",
       description: "Design and implement robust data warehouse solutions for centralized data storage and management.",
-      icon: <Database size={36} />
+      icon: <DatabaseBlobIcon size="sm" />
     },
     {
       title: "Real-time Reporting",
       description: "Access up-to-the-minute business metrics and KPIs through dynamic, real-time reporting systems.",
-      icon: <Eye size={36} />
+      icon: <EyeBlobIcon size="sm" />
     },
     {
       title: "Performance Metrics",
       description: "Develop comprehensive KPI frameworks to measure and track business performance across all areas.",
-      icon: <Target size={36} />
+      icon: <TargetBlobIcon size="sm" />
     },
     {
       title: "Predictive Insights",
       description: "Forecast future trends and outcomes using advanced predictive modeling and analytics techniques.",
-      icon: <PieChart size={36} />
+      icon: <PieChartBlobIcon size="sm" />
     }
   ];
 
@@ -45,17 +55,17 @@ const BusinessIntelligence = () => {
     {
       title: "Data-Driven Decisions",
       description: "Make confident business decisions backed by comprehensive data analysis and actionable insights.",
-      icon: <Target size={32} />
+      icon: <TargetBlobIcon size="sm" />
     },
     {
       title: "Operational Efficiency",
       description: "Identify inefficiencies and optimization opportunities through detailed operational analytics.",
-      icon: <Zap size={32} />
+      icon: <ZapBlobIcon size="sm" />
     },
     {
       title: "Competitive Advantage",
       description: "Stay ahead of market trends and competitors with advanced business intelligence capabilities.",
-      icon: <Shield size={32} />
+      icon: <ShieldBlobIcon size="sm" />
     }
   ];
 
@@ -101,7 +111,7 @@ const BusinessIntelligence = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {solutions.map((solution, index) => (
             <Card key={index} className="p-6 hover:border-bean/30 transition-all duration-300">
-              <div className="text-bean mb-4">
+              <div className="mb-4">
                 {solution.icon}
               </div>
               <h3 className="text-xl font-semibold mb-2">{solution.title}</h3>
@@ -118,7 +128,7 @@ const BusinessIntelligence = () => {
         <div className="grid md:grid-cols-3 gap-6">
           {benefits.map((benefit, index) => (
             <Card key={index} className="p-6">
-              <div className="text-bean mb-4">
+              <div className="mb-4">
                 {benefit.icon}
               </div>
               <h3 className="text-xl font-semibold mb-2">{benefit.title}</h3>
@@ -138,9 +148,9 @@ const BusinessIntelligence = () => {
             Let's discuss how our business intelligence solutions can transform your data into actionable insights 
             that drive growth and competitive advantage.
           </p>
-          <Link to="/contact" className="btn-primary inline-flex">
+          <Link to="/contact" className="btn-primary inline-flex items-center gap-2">
             Explore BI Solutions
-            <ArrowRight size={18} className="ml-2" />
+            <ArrowRightBlobIcon size="sm" />
           </Link>
         </div>
       </PageSection>

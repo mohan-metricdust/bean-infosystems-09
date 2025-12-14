@@ -3,41 +3,51 @@ import React from 'react';
 import PageHero from '@/components/layout/PageHero';
 import PageSection from '@/components/layout/PageSection';
 import { Link } from 'react-router-dom';
-import { Database, TrendingUp, BarChart3, Search, Cpu, ArrowRight, Zap, Shield, Target } from 'lucide-react';
 import { Card } from '@/components/ui/card';
 import serviceDataAnalytics from '@/assets/service-data-analytics.jpg';
+import {
+  DatabaseBlobIcon,
+  TrendingUpBlobIcon,
+  BarChart3BlobIcon,
+  SearchBlobIcon,
+  CpuBlobIcon,
+  ArrowRightBlobIcon,
+  ZapBlobIcon,
+  ShieldBlobIcon,
+  TargetBlobIcon
+} from '@/components/ui/BlobIcons';
 
 const DataAnalytics = () => {
   const services = [
     {
       title: "Data Mining & Discovery",
       description: "Extract valuable patterns and insights from large datasets using advanced mining techniques and algorithms.",
-      icon: <Search size={36} />
+      icon: <SearchBlobIcon size="sm" />
     },
     {
       title: "Statistical Analysis",
       description: "Apply rigorous statistical methods to understand data relationships and validate business hypotheses.",
-      icon: <BarChart3 size={36} />
+      icon: <BarChart3BlobIcon size="sm" />
     },
     {
       title: "Machine Learning Analytics",
       description: "Leverage ML algorithms to build predictive models and automate complex analytical processes.",
-      icon: <Cpu size={36} />
+      icon: <CpuBlobIcon size="sm" />
     },
     {
       title: "Data Processing & ETL",
       description: "Design efficient data pipelines for extraction, transformation, and loading of data from multiple sources.",
-      icon: <Database size={36} />
+      icon: <DatabaseBlobIcon size="sm" />
     },
     {
       title: "Performance Analytics",
       description: "Monitor and analyze system performance, user behavior, and operational metrics for optimization.",
-      icon: <TrendingUp size={36} />
+      icon: <TrendingUpBlobIcon size="sm" />
     },
     {
       title: "Custom Analytics Solutions",
       description: "Develop tailored analytics solutions that address your specific business challenges and requirements.",
-      icon: <Target size={36} />
+      icon: <TargetBlobIcon size="sm" />
     }
   ];
 
@@ -45,17 +55,17 @@ const DataAnalytics = () => {
     {
       title: "Advanced Methodologies",
       description: "We employ cutting-edge analytical methods and tools to deliver the most accurate and actionable insights.",
-      icon: <Zap size={32} />
+      icon: <ZapBlobIcon size="sm" />
     },
     {
       title: "Data Security & Privacy",
       description: "All analytics processes adhere to strict security standards and privacy regulations to protect your data.",
-      icon: <Shield size={32} />
+      icon: <ShieldBlobIcon size="sm" />
     },
     {
       title: "Scalable Solutions",
       description: "Our analytics infrastructure scales with your data volume and complexity as your business grows.",
-      icon: <TrendingUp size={32} />
+      icon: <TrendingUpBlobIcon size="sm" />
     }
   ];
 
@@ -101,7 +111,7 @@ const DataAnalytics = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => (
             <Card key={index} className="p-6 hover:border-bean/30 transition-all duration-300">
-              <div className="text-bean mb-4">
+              <div className="mb-4">
                 {service.icon}
               </div>
               <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
@@ -118,7 +128,7 @@ const DataAnalytics = () => {
         <div className="grid md:grid-cols-3 gap-6">
           {advantages.map((advantage, index) => (
             <Card key={index} className="p-6">
-              <div className="text-bean mb-4">
+              <div className="mb-4">
                 {advantage.icon}
               </div>
               <h3 className="text-xl font-semibold mb-2">{advantage.title}</h3>
@@ -138,9 +148,9 @@ const DataAnalytics = () => {
             Partner with our data analytics experts to transform your data into competitive advantages and 
             actionable insights that drive business growth.
           </p>
-          <Link to="/contact" className="btn-primary inline-flex">
+          <Link to="/contact" className="btn-primary inline-flex items-center gap-2">
             Start Your Analytics Journey
-            <ArrowRight size={18} className="ml-2" />
+            <ArrowRightBlobIcon size="sm" />
           </Link>
         </div>
       </PageSection>

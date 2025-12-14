@@ -2,7 +2,6 @@ import React from 'react';
 import PageHero from '@/components/layout/PageHero';
 import PageSection from '@/components/layout/PageSection';
 import { Link } from 'react-router-dom';
-import { Code, Layers, Database, Shield, Globe, ArrowRight, Monitor, Smartphone, Laptop } from 'lucide-react';
 import { Card } from '@/components/ui/card';
 import { 
   Carousel,
@@ -12,38 +11,49 @@ import {
   CarouselNext,
 } from '@/components/ui/carousel';
 import serviceAppDevelopment from '@/assets/service-app-development.jpg';
+import {
+  CodeBlobIcon,
+  LayersBlobIcon,
+  DatabaseBlobIcon,
+  ShieldBlobIcon,
+  GlobeBlobIcon,
+  ArrowRightBlobIcon,
+  MonitorBlobIcon,
+  SmartphoneBlobIcon,
+  LaptopBlobIcon
+} from '@/components/ui/BlobIcons';
 
 const ApplicationDevelopment = () => {
   const capabilities = [
     {
       title: "Web Applications",
       description: "Responsive, feature-rich web applications that deliver exceptional user experiences across all devices.",
-      icon: <Monitor size={36}  className='text-[#3F321F]'/>
+      icon: <MonitorBlobIcon size="sm" />
     },
     {
       title: "Mobile Applications",
       description: "Native and cross-platform mobile applications designed for optimal performance and usability.",
-      icon: <Smartphone size={36} className='text-[#3F321F]'/>
+      icon: <SmartphoneBlobIcon size="sm" />
     },
     {
       title: "Desktop Applications",
       description: "Powerful desktop applications that leverage the full capabilities of modern operating systems.",
-      icon: <Laptop size={36} className='text-[#3F321F]'/>
+      icon: <LaptopBlobIcon size="sm" />
     },
     {
       title: "Enterprise Software",
       description: "Comprehensive enterprise solutions designed to streamline operations and enhance productivity.",
-      icon: <Layers size={36} className='text-[#3F321F]'/>
+      icon: <LayersBlobIcon size="sm" />
     },
     {
       title: "Database Solutions",
       description: "Robust database architectures that ensure data integrity, security, and accessibility.",
-      icon: <Database size={36} className='text-[#3F321F]'/>
+      icon: <DatabaseBlobIcon size="sm" />
     },
     {
       title: "API Development",
       description: "Well-designed APIs that enable seamless integration between systems and services.",
-      icon: <Code size={36} className='text-[#3F321F]'/>
+      icon: <CodeBlobIcon size="sm" />
     }
   ];
 
@@ -122,7 +132,7 @@ const ApplicationDevelopment = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {capabilities.map((capability, index) => (
             <Card key={index} className="p-6 hover:border-bean/30 transition-all duration-300">
-              <div className="text-[#3F321F] mb-4">
+              <div className="mb-4">
                 {capability.icon}
               </div>
               <h3 className="text-xl font-semibold mb-2">{capability.title}</h3>
@@ -151,7 +161,7 @@ const ApplicationDevelopment = () => {
                   
                   {index < process.length - 1 && (
                     <div className="hidden lg:block absolute -right-4 top-1/2 transform -translate-y-1/2 z-10">
-                      <ArrowRight className="text-[#3F321F]" size={20} />
+                      <ArrowRightBlobIcon size="sm" />
                     </div>
                   )}
                 </Card>
@@ -186,8 +196,8 @@ const ApplicationDevelopment = () => {
       <PageSection dark title="Why Choose Our Application Development Services" subtitle="Experience the Bean Infosystem advantage">
         <div className="grid md:grid-cols-3 gap-6">
           <Card className="p-6">
-            <div className="text-[#3F321F] mb-4">
-              <Shield size={32} className='text-[#3F321F]'/>
+            <div className="mb-4">
+              <ShieldBlobIcon size="sm" />
             </div>
             <h3 className="text-xl font-semibold mb-2">Quality Assurance</h3>
             <p className="text-foreground/70">
@@ -196,8 +206,8 @@ const ApplicationDevelopment = () => {
             </p>
           </Card>
           <Card className="p-6">
-            <div className="text-bean mb-4">
-              <Layers size={32} className='text-[#3F321F]'/>
+            <div className="mb-4">
+              <LayersBlobIcon size="sm" />
             </div>
             <h3 className="text-xl font-semibold mb-2">Scalable Architecture</h3>
             <p className="text-foreground/70">
@@ -206,8 +216,8 @@ const ApplicationDevelopment = () => {
             </p>
           </Card>
           <Card className="p-6">
-            <div className="text-bean mb-4">
-              <Globe size={32} className='text-[#3F321F]'/>
+            <div className="mb-4">
+              <GlobeBlobIcon size="sm" />
             </div>
             <h3 className="text-xl font-semibold mb-2">Future-Ready</h3>
             <p className="text-foreground/70">
@@ -226,9 +236,9 @@ const ApplicationDevelopment = () => {
             Contact us today to schedule a consultation with our development team. We'll help you explore 
             the possibilities and develop a solution tailored to your specific requirements.
           </p>
-          <Link to="/contact" className="btn-primary inline-flex">
+          <Link to="/contact" className="btn-primary inline-flex items-center gap-2">
             Start a Conversation
-            <ArrowRight size={18} className="ml-2" />
+            <ArrowRightBlobIcon size="sm" />
           </Link>
         </div>
       </PageSection>

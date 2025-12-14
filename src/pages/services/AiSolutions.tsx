@@ -3,41 +3,50 @@ import React from 'react';
 import PageHero from '@/components/layout/PageHero';
 import PageSection from '@/components/layout/PageSection';
 import { Link } from 'react-router-dom';
-import { Brain, Zap, Cog, Shield, ArrowRight, Bot, Database, TrendingUp } from 'lucide-react';
 import { Card } from '@/components/ui/card';
 import serviceAiSolutions from '@/assets/service-ai-solutions.jpg';
+import {
+  BrainBlobIcon,
+  ZapBlobIcon,
+  CogBlobIcon,
+  ShieldBlobIcon,
+  ArrowRightBlobIcon,
+  BotBlobIcon,
+  DatabaseBlobIcon,
+  TrendingUpBlobIcon
+} from '@/components/ui/BlobIcons';
 
 const AiSolutions = () => {
   const capabilities = [
     {
       title: "Machine Learning Models",
       description: "Custom ML models designed to solve your specific business challenges and automate complex processes.",
-      icon: <Brain size={36} />
+      icon: <BrainBlobIcon size="sm" />
     },
     {
       title: "AI Automation",
       description: "Intelligent automation solutions that streamline workflows and reduce manual intervention.",
-      icon: <Bot size={36} />
+      icon: <BotBlobIcon size="sm" />
     },
     {
       title: "Data Intelligence",
       description: "Transform raw data into actionable insights using advanced AI algorithms and analytics.",
-      icon: <Database size={36} />
+      icon: <DatabaseBlobIcon size="sm" />
     },
     {
       title: "Predictive Analytics",
       description: "Leverage AI to forecast trends, optimize operations, and make data-driven decisions.",
-      icon: <TrendingUp size={36} />
+      icon: <TrendingUpBlobIcon size="sm" />
     },
     {
       title: "Process Optimization",
       description: "AI-powered solutions to identify bottlenecks and optimize business processes for maximum efficiency.",
-      icon: <Cog size={36} />
+      icon: <CogBlobIcon size="sm" />
     },
     {
       title: "Intelligent Security",
       description: "Advanced AI security solutions to protect your systems and detect threats in real-time.",
-      icon: <Shield size={36} />
+      icon: <ShieldBlobIcon size="sm" />
     }
   ];
 
@@ -45,17 +54,17 @@ const AiSolutions = () => {
     {
       title: "Cutting-Edge Technology",
       description: "We stay at the forefront of AI innovation, utilizing the latest technologies and methodologies to deliver superior solutions.",
-      icon: <Zap size={32} />
+      icon: <ZapBlobIcon size="sm" />
     },
     {
       title: "Industry Expertise",
       description: "Our team combines deep AI knowledge with extensive industry experience to create solutions that truly work.",
-      icon: <Brain size={32} />
+      icon: <BrainBlobIcon size="sm" />
     },
     {
       title: "Scalable Solutions",
       description: "Our AI implementations are designed to scale with your business, adapting to changing needs and growing demands.",
-      icon: <TrendingUp size={32} />
+      icon: <TrendingUpBlobIcon size="sm" />
     }
   ];
 
@@ -102,9 +111,7 @@ const AiSolutions = () => {
           {capabilities.map((capability, index) => (
             <Card key={index} className="p-6 hover:border-bean/30 transition-all duration-300">
               <div className="mb-4">
-                {capability.icon&& React.cloneElement(capability.icon, { 
-                    color: '#3F321F'
-                })}
+                {capability.icon}
               </div>
               <h3 className="text-xl font-semibold mb-2">{capability.title}</h3>
               <p className="text-foreground/70">
@@ -120,10 +127,8 @@ const AiSolutions = () => {
         <div className="grid md:grid-cols-3 gap-6">
           {benefits.map((benefit, index) => (
             <Card key={index} className="p-6">
-              <div className="text-bean mb-4">
-                {benefit.icon && React.cloneElement(benefit.icon, { 
-                    color: '#3F321F'
-                })}
+              <div className="mb-4">
+                {benefit.icon}
               </div>
               <h3 className="text-xl font-semibold mb-2">{benefit.title}</h3>
               <p className="text-foreground/70">
@@ -142,9 +147,9 @@ const AiSolutions = () => {
             Let's discuss how artificial intelligence can transform your business operations and drive unprecedented growth. 
             Our team is ready to help you unlock the potential of AI.
           </p>
-          <Link to="/contact" className="btn-primary inline-flex">
+          <Link to="/contact" className="btn-primary inline-flex items-center gap-2">
             Get Started with AI
-            <ArrowRight size={18} className="ml-2" />
+            <ArrowRightBlobIcon size="sm" />
           </Link>
         </div>
       </PageSection>
