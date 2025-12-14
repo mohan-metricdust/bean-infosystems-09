@@ -146,13 +146,13 @@ const Navbar = () => {
                 link.children ? (
                   <div key={link.name} className="border-b border-gray-100 last:border-b-0">
                     <button 
-                      className="flex items-center w-full px-4 py-3 text-gray-900 uppercase text-sm font-medium gap-2"
+                      className="flex items-center justify-center w-full px-4 py-3 text-gray-900 uppercase text-sm font-medium"
                       onClick={() => toggleDropdown(link.name)}
                     >
                       <span>{link.name}</span>
                       <ChevronDown 
                         size={18} 
-                        className={`ml-auto text-gray-900 transition-transform duration-200 ${
+                        className={`ml-2 text-gray-900 transition-transform duration-200 ${
                           activeDropdown === link.name ? 'rotate-180' : ''
                         }`} 
                       />
