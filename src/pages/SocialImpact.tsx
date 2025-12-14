@@ -31,7 +31,7 @@ const SocialImpact = () => {
           <h2 className="text-2xl md:text-3xl font-bold text-[#3F321F]">
             Social Impact Through Technology: Empowering Social Enterprises and NGOs
           </h2>
-          <div className="space-y-6 text-gray-800 text-lg leading-relaxed">
+          <div className="space-y-4 text-foreground/70">
             <p>
               Bean Infosystems devotes a portion of its time augmenting social impact with Nonprofits and Social Enterprises. We believe in the need for social impact activities at the core of our business and not just another CSR initiative.
             </p>
