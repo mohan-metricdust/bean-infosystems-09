@@ -5,6 +5,17 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+@tailwind components;
+@tailwind utilities;
+
 @layer base {
   :root {
     /* Updated for light theme */

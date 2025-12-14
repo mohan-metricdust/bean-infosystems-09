@@ -61,7 +61,8 @@ const StatsSection = () => {
               key={index} 
               animation="fade-in" 
               delay={index * 200}
-              className="text-center p-6 bg-white/80 backdrop-blur-sm rounded-lg hover:-translate-y-1 transition-all duration-300 shadow-lg"
+              className="text-center p-6 bg-white/80 backdrop-blur-sm rounded-lg hover:-translate-y-3 transition-all duration-500 ease-out shadow-xl hover:shadow-2xl"
+              style={{ animation: `float 6s ease-in-out infinite ${index * 0.3}s` }}
             >
               {isInView ? (
                 <CountUp 
