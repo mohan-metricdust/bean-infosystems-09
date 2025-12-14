@@ -7,7 +7,6 @@ import {
   LightbulbBlobIcon,
   TargetBlobIcon,
   HeartBlobIcon,
-  UsersBlobIcon,
   WrenchBlobIcon,
   EditBlobIcon,
   Share2BlobIcon,
@@ -19,6 +18,7 @@ import {
   ZapBlobIcon,
   BookOpenBlobIcon
 } from '@/components/ui/BlobIcons';
+import aboutMissionImage from '@/assets/about-mission.jpg';
 
 const About = () => {
   const timeline = [
@@ -102,23 +102,14 @@ const About = () => {
           </div>
           <div className="relative">
             <div className="rounded-xl overflow-hidden shadow-xl">
-              <div className="aspect-square bg-gradient-to-br from-bean/20 to-bean/5 flex items-center justify-center">
-                <div className="relative w-3/4 aspect-square">
-                  <div className="absolute top-0 left-0 w-full h-full bg-card rounded-lg transform rotate-6 shadow-lg"></div>
-                  <div className="absolute top-0 left-0 w-full h-full bg-card rounded-lg transform -rotate-3 shadow-lg"></div>
-                  <div className="relative w-full h-full bg-card rounded-lg shadow-lg p-6 flex flex-col justify-center">
-                    <div className="mb-4 flex justify-center">
-                      <UsersBlobIcon size="lg" />
-                    </div>
-                    <h3 className="text-2xl font-bold mb-2">Our Mission</h3>
-                    <p className="text-foreground/70">
-                      To empower businesses through innovative digital solutions that drive growth, efficiency and competitive advantage in an increasingly connected world.
-                    </p>
-                  </div>
-                </div>
+              <div className="aspect-square">
+                <img 
+                  src={aboutMissionImage} 
+                  alt="Our Mission - Team looking toward the future" 
+                  className="w-full h-full object-cover rounded-xl"
+                />
               </div>
             </div>
-            {/* Decorative elements */}
             <div className="absolute -z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full max-w-[120%] max-h-[120%] bg-bean/5 rounded-full blur-3xl"></div>
           </div>
         </div>
