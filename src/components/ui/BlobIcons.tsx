@@ -941,3 +941,74 @@ export const ShoppingCartBlobIcon = ({ size = 'lg', className }: BlobIconProps) 
     }
   />
 );
+
+// Search Icon
+export const SearchBlobIcon = ({ size = 'lg', className }: BlobIconProps) => (
+  <BlobSVG
+    config={createBrownBlob('search')}
+    size={sizeMap[size]}
+    className={className}
+    iconPath={
+      <g transform="translate(26, 26) scale(1.2)">
+        <circle cx="11" cy="11" r="8" fill="none" stroke="rgba(255, 255, 255, 0.95)" strokeWidth="1.5" />
+        <line x1="21" y1="21" x2="16.65" y2="16.65" stroke="rgba(255, 255, 255, 0.95)" strokeWidth="1.5" strokeLinecap="round" />
+      </g>
+    }
+  />
+);
+
+// Cpu Icon
+export const CpuBlobIcon = ({ size = 'lg', className }: BlobIconProps) => (
+  <BlobSVG
+    config={createBrownBlob('cpu')}
+    size={sizeMap[size]}
+    className={className}
+    iconPath={
+      <g transform="translate(26, 26) scale(1.1)">
+        <rect x="4" y="4" width="16" height="16" rx="2" ry="2" fill="none" stroke="rgba(255, 255, 255, 0.95)" strokeWidth="1.5" />
+        <rect x="9" y="9" width="6" height="6" fill="none" stroke="rgba(255, 255, 255, 0.95)" strokeWidth="1.5" />
+        <line x1="9" y1="1" x2="9" y2="4" stroke="rgba(255, 255, 255, 0.95)" strokeWidth="1.5" strokeLinecap="round" />
+        <line x1="15" y1="1" x2="15" y2="4" stroke="rgba(255, 255, 255, 0.95)" strokeWidth="1.5" strokeLinecap="round" />
+        <line x1="9" y1="20" x2="9" y2="23" stroke="rgba(255, 255, 255, 0.95)" strokeWidth="1.5" strokeLinecap="round" />
+        <line x1="15" y1="20" x2="15" y2="23" stroke="rgba(255, 255, 255, 0.95)" strokeWidth="1.5" strokeLinecap="round" />
+        <line x1="20" y1="9" x2="23" y2="9" stroke="rgba(255, 255, 255, 0.95)" strokeWidth="1.5" strokeLinecap="round" />
+        <line x1="20" y1="14" x2="23" y2="14" stroke="rgba(255, 255, 255, 0.95)" strokeWidth="1.5" strokeLinecap="round" />
+        <line x1="1" y1="9" x2="4" y2="9" stroke="rgba(255, 255, 255, 0.95)" strokeWidth="1.5" strokeLinecap="round" />
+        <line x1="1" y1="14" x2="4" y2="14" stroke="rgba(255, 255, 255, 0.95)" strokeWidth="1.5" strokeLinecap="round" />
+      </g>
+    }
+  />
+);
+
+// BarChart3 Icon (same as BarChart but with 3 bars)
+export const BarChart3BlobIcon = ({ size = 'lg', className }: BlobIconProps) => (
+  <BlobSVG
+    config={createBrownBlob('barChart3')}
+    size={sizeMap[size]}
+    className={className}
+    iconPath={
+      <g transform="translate(26, 26) scale(1.2)">
+        <path d="M3 3v18h18" fill="none" stroke="rgba(255, 255, 255, 0.95)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M18 17V9" stroke="rgba(255, 255, 255, 0.95)" strokeWidth="2" strokeLinecap="round" />
+        <path d="M13 17V5" stroke="rgba(255, 255, 255, 0.95)" strokeWidth="2" strokeLinecap="round" />
+        <path d="M8 17v-4" stroke="rgba(255, 255, 255, 0.95)" strokeWidth="2" strokeLinecap="round" />
+      </g>
+    }
+  />
+);
+
+// ArrowRightCircle Icon (for CTA buttons)
+export const ArrowRightCircleBlobIcon = ({ size = 'lg', className }: BlobIconProps) => (
+  <BlobSVG
+    config={createBrownBlob('arrowRightCircle')}
+    size={sizeMap[size]}
+    className={className}
+    iconPath={
+      <g transform="translate(26, 26) scale(1.2)">
+        <circle cx="12" cy="12" r="10" fill="none" stroke="rgba(255, 255, 255, 0.95)" strokeWidth="1.5" />
+        <polyline points="12 16 16 12 12 8" fill="none" stroke="rgba(255, 255, 255, 0.95)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+        <line x1="8" y1="12" x2="16" y2="12" stroke="rgba(255, 255, 255, 0.95)" strokeWidth="1.5" strokeLinecap="round" />
+      </g>
+    }
+  />
+);

@@ -3,41 +3,50 @@ import React from 'react';
 import PageHero from '@/components/layout/PageHero';
 import PageSection from '@/components/layout/PageSection';
 import { Link } from 'react-router-dom';
-import { Users, Target, Lightbulb, Shield, ArrowRight, TrendingUp, Award, CheckCircle } from 'lucide-react';
 import { Card } from '@/components/ui/card';
 import serviceAdvisoryConsulting from '@/assets/service-advisory-consulting.jpg';
+import {
+  UsersBlobIcon,
+  TargetBlobIcon,
+  LightbulbBlobIcon,
+  ShieldBlobIcon,
+  ArrowRightBlobIcon,
+  TrendingUpBlobIcon,
+  AwardBlobIcon,
+  CheckCircleBlobIcon
+} from '@/components/ui/BlobIcons';
 
 const AdvisoryConsulting = () => {
   const services = [
     {
       title: "Strategic Technology Planning",
       description: "Develop comprehensive technology strategies aligned with your business objectives and long-term vision.",
-      icon: <Target size={36} />
+      icon: <TargetBlobIcon size="sm" />
     },
     {
       title: "Digital Transformation",
       description: "Guide your organization through successful digital transformation initiatives with proven methodologies.",
-      icon: <TrendingUp size={36} />
+      icon: <TrendingUpBlobIcon size="sm" />
     },
     {
       title: "Innovation Consulting",
       description: "Identify emerging technologies and innovation opportunities to maintain your competitive advantage.",
-      icon: <Lightbulb size={36} />
+      icon: <LightbulbBlobIcon size="sm" />
     },
     {
       title: "Risk Assessment",
       description: "Comprehensive technology risk assessments to protect your business from potential threats and vulnerabilities.",
-      icon: <Shield size={36} />
+      icon: <ShieldBlobIcon size="sm" />
     },
     {
       title: "Team Development",
       description: "Build and develop high-performing technology teams with the right skills and capabilities.",
-      icon: <Users size={36} />
+      icon: <UsersBlobIcon size="sm" />
     },
     {
       title: "Best Practices Implementation",
       description: "Implement industry best practices and standards to optimize your technology operations.",
-      icon: <Award size={36} />
+      icon: <AwardBlobIcon size="sm" />
     }
   ];
 
@@ -45,17 +54,17 @@ const AdvisoryConsulting = () => {
     {
       title: "Proven Track Record",
       description: "Years of experience helping businesses across industries achieve their technology and strategic goals.",
-      icon: <CheckCircle size={32} />
+      icon: <CheckCircleBlobIcon size="sm" />
     },
     {
       title: "Industry Expertise",
       description: "Deep knowledge across multiple industries and technology domains to provide relevant, actionable advice.",
-      icon: <Award size={32} />
+      icon: <AwardBlobIcon size="sm" />
     },
     {
       title: "Collaborative Approach",
       description: "We work as an extension of your team, ensuring knowledge transfer and sustainable long-term success.",
-      icon: <Users size={32} />
+      icon: <UsersBlobIcon size="sm" />
     }
   ];
 
@@ -101,7 +110,7 @@ const AdvisoryConsulting = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => (
             <Card key={index} className="p-6 hover:border-bean/30 transition-all duration-300">
-              <div className="text-bean mb-4">
+              <div className="mb-4">
                 {service.icon}
               </div>
               <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
@@ -118,7 +127,7 @@ const AdvisoryConsulting = () => {
         <div className="grid md:grid-cols-3 gap-6">
           {advantages.map((advantage, index) => (
             <Card key={index} className="p-6">
-              <div className="text-bean mb-4">
+              <div className="mb-4">
                 {advantage.icon}
               </div>
               <h3 className="text-xl font-semibold mb-2">{advantage.title}</h3>
@@ -138,9 +147,9 @@ const AdvisoryConsulting = () => {
             Connect with our expert consultants to explore how we can help optimize your technology strategy 
             and drive business growth through strategic initiatives.
           </p>
-          <Link to="/contact" className="btn-primary inline-flex">
+          <Link to="/contact" className="btn-primary inline-flex items-center gap-2">
             Schedule a Consultation
-            <ArrowRight size={18} className="ml-2" />
+            <ArrowRightBlobIcon size="sm" />
           </Link>
         </div>
       </PageSection>
